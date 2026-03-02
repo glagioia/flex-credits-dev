@@ -12,7 +12,7 @@ export type ProductTheme = "agentforce" | "data360";
 
 /** Agentforce: #90D0FE to match UseCaseCard topics header in STEP_ADD_USE_CASE */
 const PRODUCT_THEME_COLORS: Record<ProductTheme, string> = {
-	agentforce: "#0176D3",
+	agentforce: "#00B3FF",
 	data360: "#0176D3",
 };
 
@@ -123,7 +123,7 @@ export const TemplateConfigAccordion: React.FC<TemplateConfigAccordionProps> = (
 								<span
 									className={`font-sans text-sm ${accordionView === "agentforce" ? "font-bold" : "font-medium"}`}
 									style={{
-										color: accordionView === "agentforce" ? PRODUCT_THEME_COLORS.agentforce : "#181818",
+										color: accordionView === "agentforce" ? "#0176D3" : "#181818",
 									}}
 								>
 									{getText("calc_product_agentforce_name")}
@@ -132,7 +132,7 @@ export const TemplateConfigAccordion: React.FC<TemplateConfigAccordionProps> = (
 							 
 								<div
 									className="h-[5px] w-full min-w-[80px] font-sans"
-									style={{ backgroundColor: accordionView === "agentforce" ? PRODUCT_THEME_COLORS.agentforce : "transparent" }}
+									style={{ backgroundColor: accordionView === "agentforce" ? "#0176D3" : "transparent" }}
 								/>
 							
 						</button>
