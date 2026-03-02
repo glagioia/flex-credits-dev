@@ -1,0 +1,85 @@
+{
+    "product": "both",
+    "productTotals": {
+        "agentforcePrice": 211.2,
+        "agentforceCredits": 42240,
+        "data360Price": 23.138814562500002
+    },
+    "data360Breakdown": {
+        "totalCost": 23.138814562500002,
+        "flexOnlyCost": 16,
+        "profilesCost": 7.138814562500002,
+        "savingsFromVolume": 0,
+        "flexCreditsTotal": 0,
+        "meters": [
+            {
+                "meterId": "1",
+                "meterName": "Meter 1",
+                "flexOnlyPrice": 0,
+                "profilesFlexPrice": 0
+            },
+            {
+                "meterId": "2",
+                "meterName": "Meter 2",
+                "flexOnlyPrice": 0,
+                "profilesFlexPrice": 0.063375
+            },
+            {
+                "meterId": "3",
+                "meterName": "Meter 3",
+                "flexOnlyPrice": 0,
+                "profilesFlexPrice": 0.000003965
+            },
+            {
+                "meterId": "4",
+                "meterName": "Meter 4",
+                "flexOnlyPrice": 0,
+                "profilesFlexPrice": 0
+            },
+            {
+                "meterId": "5",
+                "meterName": "Meter 5",
+                "flexOnlyPrice": 0,
+                "profilesFlexPrice": 0.26717315625000004
+            },
+            {
+                "meterId": "6",
+                "meterName": "Meter 6",
+                "flexOnlyPrice": 0,
+                "profilesFlexPrice": 0
+            },
+            {
+                "meterId": "7",
+                "meterName": "Meter 7",
+                "flexOnlyPrice": 0,
+                "profilesFlexPrice": 0
+            },
+            {
+                "meterId": "8",
+                "meterName": "Meter 8",
+                "flexOnlyPrice": 0,
+                "profilesFlexPrice": 0
+            },
+            {
+                "meterId": "9",
+                "meterName": "Meter 9",
+                "flexOnlyPrice": 16,
+                "profilesFlexPrice": 22.871641406250003
+            },
+            {
+                "meterId": "10",
+                "meterName": "Meter 10",
+                "flexOnlyPrice": 0,
+                "profilesFlexPrice": 0
+            }
+        ]
+    },
+    "data360UseCaseConfigs": [
+        {
+            "useCaseId": "2",
+            "title": "Segment & Target Audiences",
+            "price": 23.138814562500002,
+            "description": "With Data 360, marketers can build dynamic, high-value segments using unified customer data and AI-powered insights to deliver more personalized, cross-channel engagement"
+        }
+    ]
+}

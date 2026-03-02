@@ -1,0 +1,2743 @@
+{
+    "blades": [
+        {
+            "id": "1757087704746_10y4",
+            "name": "sf/marquee",
+            "attributes": {
+                "blade_layout": "right",
+                "two_column_spacing": "standard",
+                "audience_segment": [
+                    "customer",
+                    "prospect"
+                ],
+                "image_overflow": false,
+                "theme_variant": "light",
+                "minimize_blade_spacing_bottom": true,
+                "minimize_blade_spacing": true,
+                "experiment_type": "content",
+                "use_eyebrow_as_headline": false,
+                "headline": "External React Example",
+                "headline_font_color": "#032D60",
+                "headline_size": "standard",
+                "description": "<p>This page/package is used as an example for external agencies to reference.</p>\n",
+                "anchor_id": "marquee",
+                "link_1": {
+                    "variant": "secondary",
+                    "label": "Learn more",
+                    "source": "standard-link",
+                    "url": "#"
+                },
+                "link_2": {
+                    "variant": "primary",
+                    "label": "Watch demo",
+                    "source": "standard-link",
+                    "url": "#"
+                },
+                "media": {
+                    "image": {
+                        "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/01/marquee-af-ai-agents.webp?w=1024",
+                        "alt": "",
+                        "title": "2026/01/marquee-af-ai-agents.webp",
+                        "sizes": [
+                            {
+                                "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/01/marquee-af-ai-agents.webp?resize=150,150",
+                                "width": 150,
+                                "height": 150
+                            },
+                            {
+                                "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/01/marquee-af-ai-agents.webp?resize=300,169",
+                                "width": 300,
+                                "height": 169
+                            },
+                            {
+                                "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/01/marquee-af-ai-agents.webp?resize=768,432",
+                                "width": 768,
+                                "height": 432
+                            }
+                        ],
+                        "width": 1024,
+                        "height": 576,
+                        "file_url": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2026/01/marquee-af-ai-agents.webp"
+                    }
+                }
+            },
+            "path": "/wem-testing/open-blade-libs/external-react",
+            "urlLoc": "us",
+            "curHref": "/wem-testing/open-blade-libs/external-react/?source_req=pb",
+            "curLocale": "en-us",
+            "cdnEnvTag": "stable",
+            "tbidGreeting": {
+                "isEnabled": false,
+                "thEndpoint": "https://mobile.api.trailhead.com/graphql",
+                "localization": {
+                    "localizedGreeting": "Hello, {firstname}!",
+                    "localizedWordForBadges": "Badges",
+                    "localizedWordForPoints": "Points"
+                }
+            },
+            "pageAttrs": {
+                "livechat": {
+                    "enabled": true
+                },
+                "content_type": "page"
+            },
+            "wpTemplate": "open-template",
+            "seoOptions": {
+                "eager_load_images": true
+            }
+        },
+        {
+            "id": "1745614844459_1a77",
+            "name": "sf/simpletable",
+            "attributes": {
+                "blade_width": "default",
+                "audience_segment": [
+                    "customer",
+                    "prospect"
+                ],
+                "minimize_blade_spacing_bottom": true,
+                "minimize_blade_spacing": true,
+                "experiment_type": "content",
+                "headline": "calcCopy",
+                "anchor_id": "calcCopy"
+            },
+            "media_items": [
+                {
+                    "head": [
+                        {
+                            "cells": [
+                                {
+                                    "content": "key",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "name",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "nameAbbr",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "description",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "legal",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "category"
+                                }
+                            ]
+                        }
+                    ],
+                    "body": [
+                        {
+                            "cells": [
+                                {
+                                    "content": "sdr-roi",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Sales Development Rep (SDR)",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "SDR",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Have Agentforce reach out to leads and nurture your pipeline so your sales reps can focus on building customer relationships. Agentforce can send tailored emails, manage timely follow-ups, and answer common prospect questions with information from your unique knowledge base.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Benefit: Sales rep productivity gains assume digital SDR agents automate 25% of email-based tasks, saving reps 1 hour per week at hourly FTE rates (with 2% annual salary inflation). Additional Sales Qualified Leads come from engaging untouched leads —50% Yr1, 75% Yr2, 100% Yr3—using conversion, close rate, and margin to estimate value.<br>Agentforce cost: Leads prospected × ~$0.84/lead for 5-10 actions per lead. Assumes 40 hrs/week, 50 weeks/year.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Sales Cloud"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "sales-coach-roi",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Sales Coach",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Sales Coach",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Use Agentforce  to offer personalized coaching and real-time feedback for your sales team. Agentforce provides on-demand pitch practice and interactive role-playing to help upskill your sales reps and prepare them for customer interactions.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Benefit: Managers spend a set % of time coaching. Agentforce handles a ramped % of that coaching by Year 3. Weekly hours saved per manager are annualized (40 hrs/week, 50 weeks/year), converted to FTEs, and multiplied by an assumed $100K salary to get total benefit.<br>Agentforce Cost: Each manager has a set number of weekly coaching chats at $0.10 each × 50 weeks × # of managers = total Agentforce cost.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Sales Cloud"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "service-roi",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Customer Service",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Service",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Let AI agents quickly resolve common questions and handle routine tasks, freeing up service reps to tackle high value and complex issues. Service Agents can help triage requests, suggest relevant articles, and provide step-by-step instructions tailored to issues.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Benefit: A target % of cases shift from humans to Agentforce, ramped over 3 years (Year 1 = 70% of Year 2, Year 2 = 70% of Year 3). Hours saved are estimated by multiplying number of reps × average salary × % cases handled by agents annually to calculate productivity gains. Agentforce Cost: Each agent-handled case costs about $0.30. Total cost = cases handled by agents × cost per case, summed yearly for total investment.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Service Cloud"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "field-service-roi",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Field Service Agent",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Field Service Agent",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Enhance first-time fix rates by offering troubleshooting during appointments and reduce manual admin by automating job wrap-up summaries.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Calculation assumes US$150 cost per repeat service appointment, US$60,000 average fully loaded salary per technician, 40 hours worked per week, and 50 weeks worked per year. The % improvement in fix rate and reduction in admin time desired Year 3 are ramped evenly year over year, assuming 1/3 of desired return Year 1.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Service Cloud"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "field-service-back-roi",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Appointment Scheduling",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Appointment Scheduling",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Agentforce autonomously schedules, reschedules, and cancels appointments 24/7 across all channels, freeing up dispatchers to handle exceptions and preventing scheduling gaps. When a customer's needs require human assistance, Agentforce seamlessly escalates to a dispatcher.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Benefit: Annual human-scheduled appointments × target % shift to digital agents = agent-scheduled appointments. Average cost per scheduling interaction = (dispatchers × avg salary) ÷ total appointments. Benefit = agent-scheduled appointments × avg cost × % dispatcher time spent scheduling.<br>Agentforce  Cost: Cost per agent scheduling is $0.43 (4-5 actions per appointment) × number of agent scheduled appointments annually equals total Agentforce  cost.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Service Cloud"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "employee-help",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Employee Help in Slack",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Slack Employee Help",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Connect agents to internal knowledge and Slack history to boost self-serve support, speed up answers, and improve accuracy, helping employees stay productive while reducing load on internal experts.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Benefit: It’s assumed Help Agents resolve 30% of questions in Year 1, 40% in Year 2, and 50% in Year 3. Time saved = tickets deflected × time per ticket. Financial benefit = time saved (hours) × hourly wage (annual salary with 2% yearly increase).<br>Agentforce  cost: $0.20 per agent task × tickets resolved by agents per year",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Slack"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "loan-product-assist",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Loan Product Assistance",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Loan Product Assist",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Use agents to guide borrowers through loan product discovery by answering questions about loans, sharing interest rate and fee details, and quickly comparing offerings.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Benefit: Annual loan apps × pull-through rate (% Approved x % Funded) × avg margin (loan size x % margin per loan) × 5% approval rate improvement. App volume grows 3% YoY; approval rate improves YoY.<br>Agentforce  Cost: $0.50 per app (5 agent actions) × total apps/year.<br>Note: Includes agent usage cost only; excludes Digital Lending SKU needed for Loan Product Assistance.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Financial Services"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "quoting-agent",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Quoting",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Quoting",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Have agents create, update, and summarize quotes. When agents cover manual quote tasks, your team can spend less time on admin and more time closing deals.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Benefit: Assumes 20% annual quoting efficiency gain and 50 working weeks/year. Time saved = quoting hours × 20% × reps × 50 weeks. Financial benefit = time saved × hourly cost.<br>Agentforce   Cost: $0.40 per quote × 1,000 quotes/week × 50 weeks/year.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Sales Cloud"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "customer-insights",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Customer Insights in Slack",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Slack Customer Insights",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Bring this agent into account channels to surface activity, generate briefs, and share insights in Slack —giving your team on-demand CRM context to stay aligned and deeply understand the customer.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Benefit: Team productivity improves by reducing time spent on research and deck-building. Team members spend a % of a 40-hr week on these tasks, decreasing annually by 25–50%. Time saved × hourly rate (from salary, rising 2% yearly) gives financial benefit.<br>Agentforce costs: Assuming each meeting includes 3 prep tasks with 1-2 actions per task, each meeting prep/report is $0.40, multiplied by number of meeting prep/reports, team members, and 50 weeks/year.",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Slack"
+                                }
+                            ]
+                        }
+                    ],
+                    "kind": "table",
+                    "id": "1745949387300_6du"
+                }
+            ],
+            "path": "/wem-testing/open-blade-libs/external-react",
+            "urlLoc": "us",
+            "curHref": "/wem-testing/open-blade-libs/external-react/?source_req=pb",
+            "curLocale": "en-us",
+            "cdnEnvTag": "stable",
+            "pageAttrs": {
+                "livechat": {
+                    "enabled": true
+                },
+                "content_type": "page"
+            },
+            "wpTemplate": "open-template",
+            "seoOptions": {
+                "eager_load_images": true
+            }
+        },
+        {
+            "id": "1755720745016_wtw",
+            "name": "sf/simpletable",
+            "attributes": {
+                "blade_width": "default",
+                "audience_segment": [
+                    "customer",
+                    "prospect"
+                ],
+                "minimize_blade_spacing_bottom": true,
+                "minimize_blade_spacing": true,
+                "experiment_type": "content",
+                "headline": "Container Copy",
+                "description": "<p>containerCopy</p>\n",
+                "anchor_id": "containerCopy"
+            },
+            "media_items": [
+                {
+                    "head": [
+                        {
+                            "cells": [
+                                {
+                                    "content": "key",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "title",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "tooltip",
+                                    "tooltip": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "body": [
+                        {
+                            "cells": [
+                                {
+                                    "content": "sdr-roi-1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimated Sales Rep Productivity Gains",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "sdr-roi-2",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimated Increased Lead Qualification",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "sales-coach-roi-1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimate Sales Manager Productivity Gains",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "service-roi-1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimated Service Rep Productivity Gains",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "field-service-back-roi-1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Autonomous Scheduling",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "field-service-back-roi-2",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Increase in Back Office Productivity",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "field-service-roi-1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimate First Time Fix Rates",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "field-service-roi-2",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimate Admin Support",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "employee-help-1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimated Gains in Resolved Internal Cases",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "loan-product-assist-1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimated Gains in Loan Approval Rate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "quoting-agent-1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimated Quote Time Gains",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "customer-insights-1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimated Customer-Facing Team Productivity",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "kind": "table",
+                    "id": "1745949387303_3ir"
+                }
+            ],
+            "path": "/wem-testing/open-blade-libs/external-react",
+            "urlLoc": "us",
+            "curHref": "/wem-testing/open-blade-libs/external-react/?source_req=pb",
+            "curLocale": "en-us",
+            "cdnEnvTag": "stable",
+            "pageAttrs": {
+                "livechat": {
+                    "enabled": true
+                },
+                "content_type": "page"
+            },
+            "wpTemplate": "open-template",
+            "seoOptions": {
+                "eager_load_images": true
+            }
+        },
+        {
+            "id": "1748356938790_15xb",
+            "name": "sf/simpletable",
+            "attributes": {
+                "blade_width": "default",
+                "audience_segment": [
+                    "customer",
+                    "prospect"
+                ],
+                "minimize_blade_spacing_bottom": true,
+                "minimize_blade_spacing": true,
+                "experiment_type": "content",
+                "headline": "Calculator Input",
+                "anchor_id": "inputCopy"
+            },
+            "media_items": [
+                {
+                    "head": [
+                        {
+                            "cells": [
+                                {
+                                    "content": "key",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "name",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "tooltip",
+                                    "tooltip": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "body": [
+                        {
+                            "cells": [
+                                {
+                                    "content": "numberOfSalesManagers",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of Sales Managers",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The total number of sales managers who engage in coaching activities.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "timeSpentOnCoaching",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average time spent on sales coaching",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The average amount of time managers spend on coaching activities.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "yearThreeProductivityTarget",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Target percentage of coaching handled by Agentforce in year 3",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The percentage of coaching you want AI agents to handle by the end of year 3.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "averageSalesManagerSalary",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average annual compensation per sales manager",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "For total compensation, include salary, benefits, and other employee costs.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "coachingConversationsPerWeek",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of coaching conversations per manager per week",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The number of coaching sessions each manager conducts weekly.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "numberOfSalesReps",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of sales reps",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The total number of sales reps in your organization.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "timeSpentOnLeadProspecting",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Time spent on prospecting and nurturing leads (%)",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "What percentage of time do reps spend on prospecting?",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "averageSalesRepSalary",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average annual compensation per sales rep",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "For total compensation, include salary, benefits, and other employee costs.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "leadsPerRepPerWeek",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average number of leads contacted per sales rep per week",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The number of leads each sales rep contacts each week.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "yearThreeTargetPercentage",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Leads prospected and nurtured by digital agents in Year 3 (%)",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "What is your target improvement percentage for year 3?",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "unengagedLeadsPerYear",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of leads generated per year that don't get engaged by a human rep",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The total number of unengaged leads per year.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "leadConversionRate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Lead conversion rate for low priority leads",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The percentage of low tiered leads that convert to opportunities.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "averageDealSize",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average deal size",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The average monetary value of a closed deal.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "opportunityCloseRate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Opportunity close rate for sales reps",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The percentage of opportunities that lead to deals closed by your sales reps.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "grossMargin",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Gross margin",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The gross margin percentage.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "serviceEmployees",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of service reps",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The total number of service reps in your department.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "costPerEmployee",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average annual compensation per rep",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "For total compensation, include salary, benefits, and other employee costs.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "conversationsPerDay",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average number of cases handled per service rep per day",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The average number of cases handled by each of your service reps per day.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "serviceAgentCases",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Target percentage of cases handled by Agentforce in year 3",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The percentage of cases you want autonomous agents to handle by the end of year 3.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "annualServiceAppointments",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of field service appointments annually across all service reps",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "firstTimeFixRate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "First time fix rate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "improvementInFixRate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Improvement in Fix Rate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "averageVisitsPerAppointment",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average number of visits per service appointment",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "repeatVisitRate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Repeat visits due to lack of right inventory instructions (%)",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "costPerRepeatAppointment",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Cost per Repeat Appointment",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "onsiteAdminTime",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Current average technician admin support time per service visit (in minutes)",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "reductionInAdminTime",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Reduction in Admin Time",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "mobileWorkerSalary",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Mobile Worker Salary",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "annualServiceAppointmentsBackOffice",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Annual number of service appointments scheduled by dispatchers",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The total number of service appointments across all channels booked by dispatchers.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "increaseInSchedulingInteractions",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Target percentage of scheduling tasks handled by agents in 3 years",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The percentage of scheduling interactions you want AI agents to handle by the end of year 3.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "numberOfDispatchers",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Total number of dispatchers",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The number of dispatchers in your organization.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "dispatcherSalary",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average annual compensation per dispatcher",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "For total compensation, include salary, benefits, and other employee costs.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "dispatcherTimeSpentScheduling",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Time spent scheduling appointments",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The percentage of time dispatchers spend scheduling appointments each week.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "numberOfBackOfficeEmployees",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of back office employees",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "backOfficeTimeSpent",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "% of time spent on scheduling and coordination of mobile workforce",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "reductionInBackOfficeTime",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Reduction in Back Office Time",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "backOfficeSalary",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Back Office Salary",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "employeeHelp_questionsPerYear",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Annual number of internal help cases",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The total number of internal cases created annually such as employee help cases for HR, IT, engineering, etc.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "employeeHelp_avgTimeMinutes",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average internal case handle time in minutes",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The average time it takes for a support rep to answer and resolve an internal case in minutes.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "employeeHelp_annualSalary",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average annual compensation per internal help employee",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "For total compensation, include salary, benefits, and other employee costs.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "loan_applicationsPerYear",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of loan applications per year",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The number of loan applications received each year.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "loan_approvalRate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Percentage of accepted applications",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The percent of applications received that are accepted.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "loan_fundingRate",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Percentage of accepted applications that're funded",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The percent of accepted applications that're funded.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "loan_averageLoanSize",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average loan amount",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The average monetary value of a loan.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "loan_marginPerLoan",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average loan margin",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The average loan margin percentage.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "quoting_salesReps",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of sales reps involved in quoting",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Enter the number of sales reps in your organization involved in quoting.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "quoting_hoursPerWeek",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of hours spent on quotes per sales rep per week",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The hours each sales rep spends putting together quotes each week.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "quoting_hourlyCost",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average compensation per sales rep per hour",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "For hourly compensation, include salary, benefits, and other employee costs.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "quoting_quotesPerWeek",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of quotes created per week",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The total number of quotes created each week",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "customerInsights_teamMembers",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of customer-facing team members in Slack",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The total number of team members in customer facing roles in Slack. Customer facing team members may include: Sales, SEs / GTM Support, Customer Success, Customer Support / Service, etc.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "customerInsights_timePercentage",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Time spent on customer and product research or building executive decks per week",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The percentage of time thats spent searching for product information and product updates, each week.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "customerInsights_annualSalary",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Average annual compensation for customer-facing employees in Slack",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "For total compensation, include salary, benefits, and other employee costs.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "customerInsights_meetingsPerWeek",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Number of preparatory meetings or reports per employee per week",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The number of account and product prep meetings or reports that each employee has or makes each week.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "kind": "table",
+                    "id": "1745949387305_1e80"
+                }
+            ],
+            "path": "/wem-testing/open-blade-libs/external-react",
+            "urlLoc": "us",
+            "curHref": "/wem-testing/open-blade-libs/external-react/?source_req=pb",
+            "curLocale": "en-us",
+            "cdnEnvTag": "stable",
+            "pageAttrs": {
+                "livechat": {
+                    "enabled": true
+                },
+                "content_type": "page"
+            },
+            "wpTemplate": "open-template",
+            "seoOptions": {
+                "eager_load_images": false
+            }
+        },
+        {
+            "id": "1747072135906_en4",
+            "name": "sf/simpletable",
+            "attributes": {
+                "blade_width": "default",
+                "audience_segment": [
+                    "customer",
+                    "prospect"
+                ],
+                "minimize_blade_spacing_bottom": true,
+                "minimize_blade_spacing": true,
+                "experiment_type": "content",
+                "headline": "New calc values",
+                "anchor_id": "appCopy"
+            },
+            "media_items": [
+                {
+                    "head": [
+                        {
+                            "cells": [
+                                {
+                                    "content": "key",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "value",
+                                    "tooltip": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "body": [
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_headerEyebrow",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Agentforce",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_header",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "ROI Calculator",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_headerBottom",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Get a data-driven view of how Agentforce can benefit your business.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_sticky_active_copy",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Active Agentforce Skills:",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_sticky_total_copy",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Your total saving",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_sticky_withAgentforce_copy",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "with Agentforce",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_sticky_inactive_copy",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Inactive",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_resultsHeadline",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Based on your settings, we estimate that you'll see",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_resultsDescription",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "3-year total net benefits with Agentforce",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_resultsTable_year",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Year",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_resultsTable_your_savings",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Your Savings",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_resultsTableAnnualCost",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Potential annual cost without Agentforce",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_resultsTable_agentforce_investment",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Agentforce Investment",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_resultsTable_human_cost",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Agent-related Cost",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_cta1Label",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Request a deeper dive",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_cta2Label",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Learn more about Agentforce",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_cta3Label"
+                                },
+                                {
+                                    "content": "Download report"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_all_legalDisclaimer",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The results of this tool are provided for illustrative purposes only to help you consider Agentforce as a business solution and should not be relied upon. Actual results may vary and are not a guarantee or commitment regarding any potential or actual financial results or other benefits you may achieve. Individual results depend on factors including but not limited to implementation practices user adoption configurations business practices market conditions and external economic factors.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_all_legalDisclaimer_2",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Initial benefits of Salesforce Agentforce achieved within weeks, full transition assumed to happen over three years. Implementation costs not included. Actual Agentforce costs may vary based on architectural design, data requirements, and specific use case. All calculations above done in US dollars unless otherwise noted.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_intro",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Costs and savings over 3 years",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_human_cost",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "human cost",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_agentforce_cost",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "cost for Agentforce and",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_net_savings",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Net Savings",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_year_0",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Year 0",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_year_1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Year 1",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_year_2",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Year 2",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_year_3",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Year 3",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_total",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Total",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_footnoteHeadline"
+                                },
+                                {
+                                    "content": "Calculation Summary"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_chart_in",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "in",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_service_agent_handling",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "With Agentforce for Service handling",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_conversations",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "% of conversations you will save",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_over_years",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "over 3 years total net savings.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_error_service_employees",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Customer service employees is required",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_error_cost_per_employee",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Cost per employee is required",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_error_conversations_handled",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Conversations handled is required",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_resultsHeadline_part1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "With Agentforce, your business could save",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_resultsHeadline_part2",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "of conversations you will save",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_form_required",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "All fields are required",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_results_table_year",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Year",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_results_table_productivity",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Productivity Benefit",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_results_table_qualified_leads",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Lead Qualification Benefit",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_results_table_agent_cost",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Agent-related cost*",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_results_table_net_benefit",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Net Benefit",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_results_table_total_agentforce_benefits",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Agentforce Benefits",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_no_calculators_headline",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "You are missing out on potential savings.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_no_calculators_description",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Enable at least one Agentforce calculator to see your potential savings.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_calculator_toggle_info",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Disabling the Agentforce skill will keep the total out of the calculations.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_app_legal1",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "The results of this tool are provided for illustrative purposes only to help you consider Agentforce as a business solution and should not be relied upon. Actual results may vary and are not a guarantee or commitment regarding any potential or actual financial results or other benefits you may achieve. Individual results depend on factors including but not limited to implementation practices, user adoption, configurations, business practices, market conditions, and external economic factors.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_app_legal2",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Initial benefits of Salesforce Agentforce achieved within weeks; full transition assumed to happen over three years. Salesforce licenses, Data 360 credit cost, and implementation costs not included. The Flex Credits for Agentforce use are estimates. Actual Agentforce costs may vary based on architectural design, data requirements, and specific use case.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_app_legal3",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "All calculations above done in US dollars unless otherwise noted.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_formHeadline",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Tell us about your business.",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_event_remove_text",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Remove",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_selector_headline",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "What do you want Agentforce to help with?",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_selector_headline_edit",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Add or remove use cases from your calculation",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_accordion_header_description",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "3-Year Benefit Total: ",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_remove",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Remove",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_select",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Select Use Cases",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_update",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Apply",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_add",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Add Use Cases",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_updating",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Updating...",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_adding",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Adding...",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_cancel",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Cancel",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_skip",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Skip",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_count",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "oblroi_use_case_count_selected out of oblroi_use_case_count_total use cases selected",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_count_short",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "oblroi_use_case_count_short_selected out of oblroi_use_case_count_short_total",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_sticky_active_pill",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Active Use Cases",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_edit_cta",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Edit use cases",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_use_case_add_copy",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Add use cases to get started",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_estimated_flex_credits",
+                                    "tooltip": ""
+                                },
+                                {
+                                    "content": "Estimated Flex Credits for Agentforce",
+                                    "tooltip": ""
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_results_table_headline"
+                                },
+                                {
+                                    "content": "Estimated ROI Summary"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_results_table_description"
+                                },
+                                {
+                                    "content": "Our 3-year ROI projection with a breakdown of agent-related costs. Please note, these costs don't include implementation cost. Check the calculation summary for more information."
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_flex_table_headline"
+                                },
+                                {
+                                    "content": "Estimated Flex Credits for Agentforce"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "content": "oblroi_flex_table_description"
+                                },
+                                {
+                                    "content": "We've estimated the amount of flex credits needed to fulfill your projected use. Remember, this is an estimate and may be subject to change based on additional discovery and scoping of agent needs."
+                                }
+                            ]
+                        }
+                    ],
+                    "kind": "table",
+                    "id": "1745949387307_3c8"
+                }
+            ],
+            "path": "/wem-testing/open-blade-libs/external-react",
+            "urlLoc": "us",
+            "curHref": "/wem-testing/open-blade-libs/external-react/?source_req=pb",
+            "curLocale": "en-us",
+            "cdnEnvTag": "stable",
+            "pageAttrs": {
+                "livechat": {
+                    "enabled": true
+                },
+                "content_type": "page"
+            },
+            "wpTemplate": "open-template",
+            "seoOptions": {
+                "eager_load_images": false
+            }
+        },
+        {
+            "id": "1726698719166_ood_2141396",
+            "name": "sf/contactus",
+            "attributes": {
+                "audience_segment": [
+                    "prospect",
+                    "customer"
+                ],
+                "theme_variant": "light_gradient",
+                "experiment_type": "content",
+                "headline": "Ready to take the next step with Agentforce?",
+                "headline_font_color": "#032D60",
+                "blade_background_type": {
+                    "kind": "standard_background",
+                    "blade_background_image": {
+                        "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/10/contact-us-background-contour-min.png?w=1024",
+                        "alt": "",
+                        "title": "2024/10/contact-us-background-contour-min.png",
+                        "sizes": [
+                            {
+                                "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/10/contact-us-background-contour-min.png?resize=150,150",
+                                "width": 150,
+                                "height": 150
+                            },
+                            {
+                                "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/10/contact-us-background-contour-min.png?resize=300,92",
+                                "width": 300,
+                                "height": 92
+                            },
+                            {
+                                "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/10/contact-us-background-contour-min.png?resize=768,235",
+                                "width": 768,
+                                "height": 235
+                            },
+                            {
+                                "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/10/contact-us-background-contour-min.png?resize=1024,313",
+                                "width": 1024,
+                                "height": 313
+                            },
+                            {
+                                "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/10/contact-us-background-contour-min.png?resize=1536,469",
+                                "width": 1536,
+                                "height": 469
+                            },
+                            {
+                                "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/10/contact-us-background-contour-min.png?resize=2048,626",
+                                "width": 2048,
+                                "height": 626
+                            }
+                        ],
+                        "width": 1024,
+                        "height": 313,
+                        "file_url": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/10/contact-us-background-contour-min.png"
+                    },
+                    "blade_background_color": "255, 255, 255"
+                }
+            },
+            "media_items": [
+                {
+                    "icon": {
+                        "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/08/play.svg"
+                    },
+                    "headline": "Build agents fast.",
+                    "description": "<p>Take a closer look at how agent building works in our library.</p>\n",
+                    "link": {
+                        "label": "Watch demos",
+                        "variant": "text",
+                        "url": "https://www-staging.salesforce.com/form/agentforce/demo/?d=pb",
+                        "ariaLabel": "",
+                        "target": "_blank"
+                    },
+                    "kind": "card_contactus",
+                    "id": "1726698719153_jiz"
+                },
+                {
+                    "icon": {
+                        "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/08/groups.svg"
+                    },
+                    "headline": "Get expert guidance.",
+                    "description": "<p>Launch Agentforce with speed, confidence, and ROI you can measure.</p>\n",
+                    "link": {
+                        "label": "See how",
+                        "variant": "text",
+                        "url": "https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/datasheets/agentforce-phase-0-datasheet.pdf",
+                        "ariaLabel": "",
+                        "target": "_blank"
+                    },
+                    "kind": "card_contactus",
+                    "id": "1726698719154_5ky"
+                },
+                {
+                    "icon": {
+                        "src": "https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2024/08/call.svg"
+                    },
+                    "headline": "Talk to a rep.",
+                    "description": "<p>Tell us about your business needs, and we’ll help you find answers.</p>\n",
+                    "link": {
+                        "label": "Contact us",
+                        "variant": "text",
+                        "url": "https://www-staging.salesforce.com/form/agentforce/contact-us/?d=pb ",
+                        "ariaLabel": "",
+                        "target": "_blank"
+                    },
+                    "kind": "card_contactus",
+                    "id": "1726698719155_yw6"
+                }
+            ],
+            "path": "/wem-testing/open-blade-libs/external-react",
+            "urlLoc": "us",
+            "curHref": "/wem-testing/open-blade-libs/external-react/?source_req=pb",
+            "curLocale": "en-us",
+            "cdnEnvTag": "stable",
+            "pageAttrs": {
+                "livechat": {
+                    "enabled": true
+                },
+                "content_type": "page"
+            },
+            "wpTemplate": "open-template",
+            "seoOptions": {
+                "eager_load_images": false
+            }
+        },
+        {
+            "id": "1729099322955_18sw",
+            "name": "sf/faq",
+            "attributes": {
+                "audience_segment": [
+                    "customer",
+                    "prospect"
+                ],
+                "theme_variant": "light_gradient",
+                "experiment_type": "content",
+                "headline": "Frequently Asked Questions",
+                "headline_font_color": "#032D60",
+                "blade_background_type": {
+                    "blade_background_color": "234, 245, 254",
+                    "kind": "standard_background"
+                }
+            },
+            "tab_items": [
+                {
+                    "label": "faq",
+                    "kind": "card_faq-category",
+                    "id": "1729099323018_pnx",
+                    "content": [
+                        {
+                            "kind": "accordion_group",
+                            "id": "1734011353227_qb9",
+                            "accordions": [
+                                {
+                                    "headline": "What is an AI Agent?",
+                                    "description": "<p>An <a href=\"https://www-staging.salesforce.com/agentforce/ai-agents/\" target=\"_self\"><ins>AI agent</ins></a> is more than just intelligent software. It's designed to learn and adapt to user interactions autonomously. This flexibility and continuous learning capability enable it to drive efficiencies while providing increasingly better support and solutions, making digital assistants an invaluable tool for improving customer experiences.</p>\n",
+                                    "kind": "card_faq-qna",
+                                    "id": "1729099323041_xo6"
+                                },
+                                {
+                                    "headline": "What are the benefits of Agentforce?",
+                                    "description": "<p><a href=\"https://www-staging.salesforce.com/agentforce/\" target=\"_self\"><ins>Agentforce</ins></a> enhances customer success by enabling humans and AI agents to work together seamlessly.</p>\n<p>With Agentforce, you can build and customize autonomous AI agents to support your employees and customers 24/7, boosting efficiency, scalability, and satisfaction.</p>\n",
+                                    "kind": "card_faq-qna",
+                                    "id": "1729533543603_mg8"
+                                },
+                                {
+                                    "headline": "What is conversational AI? ",
+                                    "description": "<p><a href=\"https://www-staging.salesforce.com/artificial-intelligence/what-is-conversational-ai/\" target=\"_self\"><ins>Conversational AI</ins> </a>enables machines to communicate with humans using natural language, facilitating interactions through chatbots, virtual assistants, and other automated systems to improve customer service and engagement.</p>\n",
+                                    "kind": "card_faq-qna",
+                                    "id": "1729533553089_gzz"
+                                },
+                                {
+                                    "headline": "What is an Agentforce skill?",
+                                    "description": "<p>Pre-built skills, or jobs that Agentforce can perform, are ready-to-use packaged topics and actions, all grounded on the data and metadata of your org. These pre-built skills are tasks like lead development, customer service or generating data visualizations and span CRM, Slack, Tableau, Partners and more.</p>\n",
+                                    "kind": "card_faq-qna",
+                                    "id": "1734683282648_krx"
+                                },
+                                {
+                                    "headline": "How do I estimate how many Flex Credits I need with the Agentforce ROI calculator?\t",
+                                    "description": "<p>With the Agentforce ROI calculator, select the use cases you would like to have Agentforce help with, and then enter the details about your use cases, and the Calculator will show you an estimated number of Flex Credits needed for that use case.</p>\n",
+                                    "kind": "card_faq-qna",
+                                    "id": "1747351571806_sel"
+                                },
+                                {
+                                    "headline": "What is the difference between Flex Credits and Data 360 Credits?",
+                                    "description": "<p>Currently, Flex Credits are used to pay for the consumption of Agentforce. Data 360 Credits are used to pay for the consumption of Data 360.</p>\n",
+                                    "kind": "card_faq-qna",
+                                    "id": "1747351657400_13t8"
+                                },
+                                {
+                                    "headline": "Can I use Flex Credits and Conversations together?",
+                                    "description": "<p>Currently, Flex Credits and Conversations cannot be combined in the same Salesforce org.</p>\n",
+                                    "kind": "card_faq-qna",
+                                    "id": "1747351745153_cex"
+                                },
+                                {
+                                    "headline": "How can I get started with Flex Credits today?",
+                                    "description": "<p>The free Salesforce <a href=\"https://www-staging.salesforce.com/crm/foundations/\" target=\"_self\">Foundations</a> product includes a bundle of Flex Credits to help you get started.</p>\n",
+                                    "kind": "card_faq-qna",
+                                    "id": "1747351781952_1dsf"
+                                },
+                                {
+                                    "headline": "If I have an Agentforce for Sales, Service or Industries Add-on or an Agentforce 1 Edition license, are these use cases included?",
+                                    "description": "<p>For users with one of these add-ons or licenses, Agenforce usage for employees is unmetered (like Slack Employee Help or Quoting Agent). Flex Credits estimation is shown in the tool and does not account for users with this provisioning. </p>\n",
+                                    "kind": "card_faq-qna",
+                                    "id": "1757512510946_i1s"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "path": "/wem-testing/open-blade-libs/external-react",
+            "urlLoc": "us",
+            "curHref": "/wem-testing/open-blade-libs/external-react/?source_req=pb",
+            "curLocale": "en-us",
+            "cdnEnvTag": "stable",
+            "pageAttrs": {
+                "livechat": {
+                    "enabled": true
+                },
+                "content_type": "page"
+            },
+            "wpTemplate": "open-template",
+            "seoOptions": {
+                "eager_load_images": false
+            }
+        }
+    ],
+    "chassis": "v2",
+    "agent": {
+        "language": "en_US",
+        "orgId": "00D000000000062",
+        "deploymentDevName": "page_builder_miaw_ui",
+        "messagingUrl": "https://org62.my.salesforce-scrt.com",
+        "fallbackOrgId": "00Dfh000001sFaz",
+        "fallbackDeploymentDevName": "page_builder_miaw_ui",
+        "fallbackMessagingUrl": "https://det.demo.my.salesforce-scrt.com",
+        "agentLanguageCode": "en_US",
+        "experiment": false,
+        "experimentRoutes": {
+            "v3": [],
+            "v1-v2": [],
+            "excluded": []
+        },
+        "translations": {
+            "prompts": [
+                "Connect me with a sales rep",
+                "Show me an Agentforce demo",
+                "How can Salesforce help my business"
+            ]
+        },
+        "mfeAttributes": {
+            "enable-rich-content": "true",
+            "streaming": "true",
+            "routing-attributes": "{\"SFPlusApiEndpoint\":\"https://www.salesforce.com/plus\",\"userApiUrl\":\"https://www.salesforce.com/api/plus/user\"}"
+        },
+        "conviva": {
+            "appId": "salesforce.com",
+            "convivaCustomerKey": "06728a8384d0e8809619d22a5b7f21f8cad1f19e"
+        }
+    }
+}

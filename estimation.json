@@ -1,0 +1,479 @@
+{
+    "id": "0c14dc35-17b3-4e23-8533-b89297f7bdd1",
+    "industryId": "1",
+    "companySizeId": "1",
+    "totalCredits": 100000,
+    "totalPrice": 500,
+    "totalSeats": 0,
+    "config": [
+        {
+            "product": "agentforce",
+            "config": [
+                {
+                    "template": {
+                        "price": 101.2,
+                        "seats": 0,
+                        "topics": [
+                            {
+                                "price": 101.2,
+                                "inputs": [
+                                    {
+                                        "value": 22,
+                                        "inputKey": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_INQ"
+                                    },
+                                    {
+                                        "value": 23,
+                                        "inputKey": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_CUSTOMERS_WHO_INQUIRE_ON_ACCOUNT_TRANSACTION"
+                                    }
+                                ],
+                                "credits": 20240,
+                                "topicId": "903",
+                                "selected": true
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_TRANSFER_FUNDS_PERCENTAGE_OF_TRANSFERS_TO_SHIFT_TO_AGENTS"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_TRANSFER_FUNDS_TOTAL_TRANSFER_FUND_REQUESTS_PER_YEAR"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "908",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_CUSTOMERS_WHO_REQUEST_ACCOUNT_BALANCE"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_REQ"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "902",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FEE_REVERSAL_TOTAL_FEE_REVERAL_REQUESTS_PER_YEAR"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FEE_REVERSAL_PERCENTAGE_OF_FEE_REVERSALS_TO_SHIFT_TO_AGENTS"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "907",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_ADDRESS_UPDATE_PERCENTAGE_OF_UPDATES_TO_BE_HANDLED_BY_AGENTS"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_ADDRESS_UPDATE_TOTAL_ADDRESS_UPDATES_REQUESTED_PER_YEAR"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "904",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_REQUEST_STATEMENT_COPIES_TOTAL_STATEMENT_REQUESTS_PER_YEAR"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_REQUEST_STATEMENT_COPIES_PERCENTAGE_OF_STATEMENT_REQUESTS_TO_BE_HANDLED_BY_"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "905",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_LOCKUNLOCK_CARD_PERCENTAGE_OF_CARD_LOCKUNLOCKS_TO_SHIFT_TO_AGENTS"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_LOCKUNLOCK_CARD_TOTAL_CARD_LOCKUNLOCKS_PER_YEAR"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "906",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_ASK_THE_AGENT_A_Q"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_BANKING_CUSTOMERS"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "909",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "UC6_1"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "UC6_2"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "UC6_3"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "enhance-my-agent",
+                                "selected": false
+                            }
+                        ],
+                        "credits": 20240,
+                        "templateId": "158"
+                    }
+                },
+                {
+                    "template": {
+                        "price": 110,
+                        "seats": 0,
+                        "topics": [
+                            {
+                                "price": 110,
+                                "inputs": [
+                                    {
+                                        "value": 11,
+                                        "inputKey": "INPUT_INVOICE_LINE_EXPLANATION_NUMBER_OF_INVOICE_LINES_CUSTOMER_INQUIRES_ABOUT"
+                                    },
+                                    {
+                                        "value": 25,
+                                        "inputKey": "INPUT_INVOICE_LINE_EXPLANATION_TOTAL_NUMBER_OF_BILLINGRELATED_SUPPORT_CALLS_YEARL"
+                                    }
+                                ],
+                                "credits": 22000,
+                                "topicId": "910",
+                                "selected": true
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "UC6_1"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "UC6_2"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "UC6_3"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "enhance-my-agent",
+                                "selected": false
+                            }
+                        ],
+                        "credits": 22000,
+                        "templateId": "159"
+                    }
+                }
+            ]
+        },
+        {
+            "product": "data360",
+            "config": {
+                "useCases": [
+                    {
+                        "price": 23.138814562500002,
+                        "inputs": [
+                            {
+                                "value": 140,
+                                "inputKey": "UC1_1"
+                            },
+                            {
+                                "value": 0.65,
+                                "inputKey": "UC1_2"
+                            },
+                            {
+                                "value": 15,
+                                "inputKey": "UC1_3"
+                            },
+                            {
+                                "value": 0,
+                                "inputKey": "UC1_4"
+                            },
+                            {
+                                "value": 0,
+                                "inputKey": "UC1_5"
+                            }
+                        ],
+                        "credits": 4627.7629125,
+                        "useCase": 2
+                    }
+                ],
+                "pricingResults": {
+                    "PROFILES": {
+                        "price": 0,
+                        "meters": [
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 1,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 2,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 3,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 4,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 5,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 6,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 7,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 8,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 9,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 10,
+                                "discount": 0
+                            }
+                        ],
+                        "credits": 0,
+                        "pricingTypeKey": "PROFILES"
+                    },
+                    "FLEX_CREDITS": {
+                        "price": 23.202193527500004,
+                        "meters": [
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 1,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0.063375,
+                                "credits": 12.674999999999999,
+                                "meterId": 2,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0.000003965,
+                                "credits": 0.0007930000000000001,
+                                "meterId": 3,
+                                "discount": 1.3672158543322877e-16
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 4,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0.26717315625000004,
+                                "credits": 53.43463125000001,
+                                "meterId": 5,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 6,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 7,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 8,
+                                "discount": 0
+                            },
+                            {
+                                "price": 22.871641406250003,
+                                "credits": 4574.32828125,
+                                "meterId": 9,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 10,
+                                "discount": 0
+                            }
+                        ],
+                        "credits": 4640.4387055,
+                        "pricingTypeKey": "FLEX_CREDITS"
+                    }
+                },
+                "inputDataFoundation": [
+                    {
+                        "value": 13,
+                        "inputKey": "DF1"
+                    },
+                    {
+                        "value": 13,
+                        "inputKey": "DF2"
+                    },
+                    {
+                        "value": 13,
+                        "inputKey": "DF3"
+                    },
+                    {
+                        "value": 0,
+                        "inputKey": "DF4"
+                    },
+                    {
+                        "value": 0,
+                        "inputKey": "DF5"
+                    },
+                    {
+                        "value": 0,
+                        "inputKey": "DF6"
+                    }
+                ],
+                "meters": [
+                    {
+                        "price": 0,
+                        "credits": 0,
+                        "meterId": 1,
+                        "discount": 0
+                    },
+                    {
+                        "price": 0.063375,
+                        "credits": 12.674999999999999,
+                        "meterId": 2,
+                        "discount": 0
+                    },
+                    {
+                        "price": 0.000003965,
+                        "credits": 0.0007930000000000001,
+                        "meterId": 3,
+                        "discount": 1.3672158543322877e-16
+                    },
+                    {
+                        "price": 0,
+                        "credits": 0,
+                        "meterId": 4,
+                        "discount": 0
+                    },
+                    {
+                        "price": 0.26717315625000004,
+                        "credits": 53.43463125000001,
+                        "meterId": 5,
+                        "discount": 0
+                    },
+                    {
+                        "price": 0,
+                        "credits": 0,
+                        "meterId": 6,
+                        "discount": 0
+                    },
+                    {
+                        "price": 0,
+                        "credits": 0,
+                        "meterId": 7,
+                        "discount": 0
+                    },
+                    {
+                        "price": 0,
+                        "credits": 0,
+                        "meterId": 8,
+                        "discount": 0
+                    },
+                    {
+                        "price": 22.871641406250003,
+                        "credits": 4574.32828125,
+                        "meterId": 9,
+                        "discount": 0
+                    },
+                    {
+                        "price": 0,
+                        "credits": 0,
+                        "meterId": 10,
+                        "discount": 0
+                    }
+                ]
+            },
+            "price": 23.202193527500004,
+            "credits": 4640
+        }
+    ]
+}

@@ -1,0 +1,386 @@
+{
+    "id": "840c1726-0635-424f-9c21-f697555a6c02",
+    "industry": "Automotive",
+    "companySize": "Emerging Small Business",
+    "step": "MP_PRODUCT",
+    "status": true,
+    "totalCredits": 100000,
+    "totalPrice": 330500,
+    "totalSeats": 50,
+    "config": [
+        {
+            "product": "agentforce",
+            "config": [
+                {
+                    "template": {
+                        "price": 330000,
+                        "seats": 50,
+                        "credits": 0,
+                        "templateId": "200",
+                        "gatingSkuId": "12"
+                    }
+                },
+                {
+                    "template": {
+                        "price": 270.6,
+                        "seats": 0,
+                        "topics": [
+                            {
+                                "price": 270.6,
+                                "inputs": [
+                                    {
+                                        "value": 33,
+                                        "inputKey": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_INQ"
+                                    },
+                                    {
+                                        "value": 41,
+                                        "inputKey": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_CUSTOMERS_WHO_INQUIRE_ON_ACCOUNT_TRANSACTION"
+                                    }
+                                ],
+                                "credits": 54120,
+                                "topicId": "903",
+                                "selected": true
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_TRANSFER_FUNDS_PERCENTAGE_OF_TRANSFERS_TO_SHIFT_TO_AGENTS"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_TRANSFER_FUNDS_TOTAL_TRANSFER_FUND_REQUESTS_PER_YEAR"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "908",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_CUSTOMERS_WHO_REQUEST_ACCOUNT_BALANCE"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_REQ"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "902",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FEE_REVERSAL_TOTAL_FEE_REVERAL_REQUESTS_PER_YEAR"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FEE_REVERSAL_PERCENTAGE_OF_FEE_REVERSALS_TO_SHIFT_TO_AGENTS"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "907",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_ADDRESS_UPDATE_PERCENTAGE_OF_UPDATES_TO_BE_HANDLED_BY_AGENTS"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_ADDRESS_UPDATE_TOTAL_ADDRESS_UPDATES_REQUESTED_PER_YEAR"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "904",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_REQUEST_STATEMENT_COPIES_TOTAL_STATEMENT_REQUESTS_PER_YEAR"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_REQUEST_STATEMENT_COPIES_PERCENTAGE_OF_STATEMENT_REQUESTS_TO_BE_HANDLED_BY_"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "905",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_LOCKUNLOCK_CARD_PERCENTAGE_OF_CARD_LOCKUNLOCKS_TO_SHIFT_TO_AGENTS"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_LOCKUNLOCK_CARD_TOTAL_CARD_LOCKUNLOCKS_PER_YEAR"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "906",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_ASK_THE_AGENT_A_Q"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_BANKING_CUSTOMERS"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "909",
+                                "selected": false
+                            },
+                            {
+                                "price": 0,
+                                "inputs": [
+                                    {
+                                        "value": 0,
+                                        "inputKey": "UC6_1"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "UC6_2"
+                                    },
+                                    {
+                                        "value": 0,
+                                        "inputKey": "UC6_3"
+                                    }
+                                ],
+                                "credits": 0,
+                                "topicId": "enhance-my-agent",
+                                "selected": false
+                            }
+                        ],
+                        "credits": 54120,
+                        "templateId": "158"
+                    }
+                }
+            ]
+        },
+        {
+            "product": "data360",
+            "config": {
+                "useCases": [
+                    {
+                        "price": 178.70815114500002,
+                        "inputs": [
+                            {
+                                "value": 23,
+                                "inputKey": "UC1_1"
+                            },
+                            {
+                                "value": 0.3,
+                                "inputKey": "UC1_2"
+                            },
+                            {
+                                "value": 1156,
+                                "inputKey": "UC1_3"
+                            },
+                            {
+                                "value": 0,
+                                "inputKey": "UC1_4"
+                            },
+                            {
+                                "value": 0,
+                                "inputKey": "UC1_5"
+                            }
+                        ],
+                        "credits": 35741.630229,
+                        "useCase": 2
+                    }
+                ],
+                "pricingResults": {
+                    "PROFILES": {
+                        "price": 0,
+                        "meters": [
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 1,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 2,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 3,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 4,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 5,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 6,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 7,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 8,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 9,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 10,
+                                "discount": 0
+                            }
+                        ],
+                        "credits": 0,
+                        "pricingTypeKey": "PROFILES"
+                    },
+                    "FLEX_CREDITS": {
+                        "price": 178.79478131000002,
+                        "meters": [
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 1,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0.08662500000000002,
+                                "credits": 17.325000000000003,
+                                "meterId": 2,
+                                "discount": -2.0506283860320352e-16
+                            },
+                            {
+                                "price": 0.000005165000000000001,
+                                "credits": 0.0010330000000000003,
+                                "meterId": 3,
+                                "discount": -2.0991329573775496e-16
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 4,
+                                "discount": 0
+                            },
+                            {
+                                "price": 1.3865475825000002,
+                                "credits": 277.30951650000003,
+                                "meterId": 5,
+                                "discount": -2.0498185413268361e-16
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 6,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 7,
+                                "discount": 0
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 8,
+                                "discount": 0
+                            },
+                            {
+                                "price": 177.32160356250003,
+                                "credits": 35464.320712500004,
+                                "meterId": 9,
+                                "discount": -2.0516275140775195e-16
+                            },
+                            {
+                                "price": 0,
+                                "credits": 0,
+                                "meterId": 10,
+                                "discount": 0
+                            }
+                        ],
+                        "credits": 35758.95626200001,
+                        "pricingTypeKey": "FLEX_CREDITS"
+                    }
+                },
+                "inputDataFoundation": [
+                    {
+                        "value": 11,
+                        "inputKey": "DF1"
+                    },
+                    {
+                        "value": 21,
+                        "inputKey": "DF2"
+                    },
+                    {
+                        "value": 13,
+                        "inputKey": "DF3"
+                    },
+                    {
+                        "value": 0,
+                        "inputKey": "DF4"
+                    },
+                    {
+                        "value": 0,
+                        "inputKey": "DF5"
+                    },
+                    {
+                        "value": 0,
+                        "inputKey": "DF6"
+                    }
+                ]
+            },
+            "price": 178.79478131000002,
+            "credits": 35758
+        }
+    ],
+    "createdBy": "system",
+    "createdAt": "2026-02-28T14:15:31.190585Z",
+    "lastUpdatedBy": "system",
+    "lastUpdatedAt": "2026-02-28T14:17:18.200964Z"
+}

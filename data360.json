@@ -1,0 +1,128 @@
+{
+    "id": "f862fa0f-19bd-4a43-bb88-0fba5c2ef624",
+    "industryId": "1",
+    "companySizeId": "1",
+    "config": [
+        {
+            "product": "data360",
+            "config": {
+                "inputDataFoundation": [
+                    {
+                        "inputKey": "DF1",
+                        "value": 100
+                    },
+                    {
+                        "inputKey": "DF2",
+                        "value": 50
+                    },
+                    {
+                        "inputKey": "DF3",
+                        "value": 100
+                    },
+                    {
+                        "inputKey": "DF4",
+                        "value": 54
+                    },
+                    {
+                        "inputKey": "DF5",
+                        "value": 35
+                    },
+                    {
+                        "inputKey": "DF6",
+                        "value": 48
+                    }
+                ],
+                "useCases": [
+                    {
+                        "useCase": 3,
+                        "inputs": [
+                            {
+                                "inputKey": "UC2_1",
+                                "value": 500
+                            },
+                            {
+                                "inputKey": "UC2_2",
+                                "value": 1000
+                            },
+                            {
+                                "inputKey": "UC2_3",
+                                "value": 5000
+                            }
+                        ],
+                        "credits": 76.27,
+                        "price": 0.38135
+                    }
+                ],
+                "meters": [
+                    {
+                        "meterId": 1,
+                        "credits": 0,
+                        "price": 0,
+                        "discount": null
+                    },
+                    {
+                        "meterId": 2,
+                        "credits": 7.5,
+                        "price": 0.0375,
+                        "discount": 0
+                    },
+                    {
+                        "meterId": 3,
+                        "credits": 0.0204,
+                        "price": 0.00010200000000000001,
+                        "discount": 0
+                    },
+                    {
+                        "meterId": 4,
+                        "credits": 15,
+                        "price": 0.075,
+                        "discount": 0
+                    },
+                    {
+                        "meterId": 5,
+                        "credits": 0,
+                        "price": 0,
+                        "discount": null
+                    },
+                    {
+                        "meterId": 6,
+                        "credits": 73.5,
+                        "price": 0.3675,
+                        "discount": 0
+                    },
+                    {
+                        "meterId": 7,
+                        "credits": 0,
+                        "price": 0,
+                        "discount": null
+                    },
+                    {
+                        "meterId": 8,
+                        "credits": 0,
+                        "price": 0,
+                        "discount": null
+                    },
+                    {
+                        "meterId": 9,
+                        "credits": 0,
+                        "price": 0,
+                        "discount": null
+                    },
+                    {
+                        "meterId": 10,
+                        "credits": 0,
+                        "price": 0,
+                        "discount": null
+                    }
+                ],
+                "credits": 96.0204,
+                "price": 0.480102
+            },
+            "credits": 96.0204,
+            "price": 0.480102
+        }
+    ],
+    "totalCredits": 96.0204,
+    "totalPrice": 0.480102,
+    "totalSeats": 0
+}

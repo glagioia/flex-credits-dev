@@ -1,0 +1,908 @@
+
+[
+    {
+        "template": {
+            "id": "158",
+            "systemName": "banking-customer-service-agent",
+            "displayName": "Banking Customer Service Agent",
+            "description": "Deliver instant, 24/7 resolution for common banking inquiries to meet customer needs on the spot while significantly reducing call center traffic",
+            "status": "PUBLISHED",
+            "cloudId": "8",
+            "targetAudience": "CUSTOMER",
+            "topics": [
+                {
+                    "id": "903",
+                    "systemName": "financial-account-transactions",
+                    "displayName": "Financial Account Transactions",
+                    "description": "",
+                    "status": "PUBLISHED",
+                    "minimumCredits": 20,
+                    "maximumCredits": 40,
+                    "mostLikelyCredits": 40,
+                    "targetAudience": "CUSTOMER",
+                    "metadata": {
+                        "maxActions": 2,
+                        "minActions": 1,
+                        "actionCount": 2
+                    },
+                    "formula": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_CUSTOMERS_WHO_INQUIRE_ON_ACCOUNT_TRANSACTION * INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_INQ",
+                    "inputs": [
+                        {
+                            "key": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_INQ",
+                            "label": "Total times yearly on average a customer would inquire on account transactions",
+                            "dataType": "NUMBER",
+                            "id": "4",
+                            "config": {},
+                            "topicId": "903",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        },
+                        {
+                            "key": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_CUSTOMERS_WHO_INQUIRE_ON_ACCOUNT_TRANSACTION",
+                            "label": "Total customers who inquire on account transactions",
+                            "dataType": "NUMBER",
+                            "id": "3",
+                            "config": {},
+                            "topicId": "903",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        }
+                    ],
+                    "cloudId": "8"
+                },
+                {
+                    "id": "908",
+                    "systemName": "transfer-funds",
+                    "displayName": "Transfer Funds",
+                    "description": "",
+                    "status": "PUBLISHED",
+                    "minimumCredits": 40,
+                    "maximumCredits": 80,
+                    "mostLikelyCredits": 80,
+                    "targetAudience": "CUSTOMER",
+                    "metadata": {
+                        "maxActions": 4,
+                        "minActions": 2,
+                        "actionCount": 4
+                    },
+                    "formula": "INPUT_TRANSFER_FUNDS_TOTAL_TRANSFER_FUND_REQUESTS_PER_YEAR * INPUT_TRANSFER_FUNDS_PERCENTAGE_OF_TRANSFERS_TO_SHIFT_TO_AGENTS",
+                    "inputs": [
+                        {
+                            "key": "INPUT_TRANSFER_FUNDS_PERCENTAGE_OF_TRANSFERS_TO_SHIFT_TO_AGENTS",
+                            "label": "Percentage of transfers to shift to agents",
+                            "dataType": "PERCENT",
+                            "id": "14",
+                            "config": {},
+                            "topicId": "908",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        },
+                        {
+                            "key": "INPUT_TRANSFER_FUNDS_TOTAL_TRANSFER_FUND_REQUESTS_PER_YEAR",
+                            "label": "Total transfer fund requests per year",
+                            "dataType": "NUMBER",
+                            "id": "13",
+                            "config": {},
+                            "topicId": "908",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        }
+                    ],
+                    "cloudId": "8"
+                },
+                {
+                    "id": "902",
+                    "systemName": "financial-account-balances",
+                    "displayName": "Financial Account Balances",
+                    "description": "",
+                    "status": "PUBLISHED",
+                    "minimumCredits": 20,
+                    "maximumCredits": 40,
+                    "mostLikelyCredits": 40,
+                    "targetAudience": "CUSTOMER",
+                    "metadata": {
+                        "maxActions": 2,
+                        "minActions": 1,
+                        "actionCount": 2
+                    },
+                    "formula": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_CUSTOMERS_WHO_REQUEST_ACCOUNT_BALANCE * INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_REQ",
+                    "inputs": [
+                        {
+                            "key": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_CUSTOMERS_WHO_REQUEST_ACCOUNT_BALANCE",
+                            "label": "Total customers who request account balance",
+                            "dataType": "NUMBER",
+                            "id": "1",
+                            "config": {},
+                            "topicId": "902",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        },
+                        {
+                            "key": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_REQ",
+                            "label": "Total times yearly on average a customer would request account balance",
+                            "dataType": "NUMBER",
+                            "id": "2",
+                            "config": {},
+                            "topicId": "902",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        }
+                    ],
+                    "cloudId": "8"
+                },
+                {
+                    "id": "907",
+                    "systemName": "fee-reversal",
+                    "displayName": "Fee Reversal",
+                    "description": "",
+                    "status": "PUBLISHED",
+                    "minimumCredits": 40,
+                    "maximumCredits": 60,
+                    "mostLikelyCredits": 60,
+                    "targetAudience": "CUSTOMER",
+                    "metadata": {
+                        "maxActions": 3,
+                        "minActions": 2,
+                        "actionCount": 3
+                    },
+                    "formula": "INPUT_FEE_REVERSAL_TOTAL_FEE_REVERAL_REQUESTS_PER_YEAR * INPUT_FEE_REVERSAL_PERCENTAGE_OF_FEE_REVERSALS_TO_SHIFT_TO_AGENTS",
+                    "inputs": [
+                        {
+                            "key": "INPUT_FEE_REVERSAL_TOTAL_FEE_REVERAL_REQUESTS_PER_YEAR",
+                            "label": "Total fee reveral requests per year",
+                            "dataType": "NUMBER",
+                            "id": "11",
+                            "config": {},
+                            "topicId": "907",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        },
+                        {
+                            "key": "INPUT_FEE_REVERSAL_PERCENTAGE_OF_FEE_REVERSALS_TO_SHIFT_TO_AGENTS",
+                            "label": "Percentage of fee reversals to shift to agents",
+                            "dataType": "PERCENT",
+                            "id": "12",
+                            "config": {},
+                            "topicId": "907",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        }
+                    ],
+                    "cloudId": "8"
+                },
+                {
+                    "id": "904",
+                    "systemName": "address-update",
+                    "displayName": "Address Update",
+                    "description": "",
+                    "status": "PUBLISHED",
+                    "minimumCredits": 20,
+                    "maximumCredits": 40,
+                    "mostLikelyCredits": 40,
+                    "targetAudience": "CUSTOMER",
+                    "metadata": {
+                        "maxActions": 2,
+                        "minActions": 1,
+                        "actionCount": 2
+                    },
+                    "formula": "INPUT_ADDRESS_UPDATE_TOTAL_ADDRESS_UPDATES_REQUESTED_PER_YEAR * INPUT_ADDRESS_UPDATE_PERCENTAGE_OF_UPDATES_TO_BE_HANDLED_BY_AGENTS",
+                    "inputs": [
+                        {
+                            "key": "INPUT_ADDRESS_UPDATE_PERCENTAGE_OF_UPDATES_TO_BE_HANDLED_BY_AGENTS",
+                            "label": "Percentage of updates to be handled by agents",
+                            "dataType": "PERCENT",
+                            "id": "6",
+                            "config": {},
+                            "topicId": "904",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        },
+                        {
+                            "key": "INPUT_ADDRESS_UPDATE_TOTAL_ADDRESS_UPDATES_REQUESTED_PER_YEAR",
+                            "label": "Total address updates requested per year",
+                            "dataType": "NUMBER",
+                            "id": "5",
+                            "config": {},
+                            "topicId": "904",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        }
+                    ],
+                    "cloudId": "8"
+                },
+                {
+                    "id": "905",
+                    "systemName": "request-statement-copies",
+                    "displayName": "Request Statement Copies",
+                    "description": "",
+                    "status": "PUBLISHED",
+                    "minimumCredits": 20,
+                    "maximumCredits": 60,
+                    "mostLikelyCredits": 60,
+                    "targetAudience": "CUSTOMER",
+                    "metadata": {
+                        "maxActions": 3,
+                        "minActions": 1,
+                        "actionCount": 3
+                    },
+                    "formula": "INPUT_REQUEST_STATEMENT_COPIES_TOTAL_STATEMENT_REQUESTS_PER_YEAR * INPUT_REQUEST_STATEMENT_COPIES_PERCENTAGE_OF_STATEMENT_REQUESTS_TO_BE_HANDLED_BY_",
+                    "inputs": [
+                        {
+                            "key": "INPUT_REQUEST_STATEMENT_COPIES_TOTAL_STATEMENT_REQUESTS_PER_YEAR",
+                            "label": "Total statement requests per year",
+                            "dataType": "NUMBER",
+                            "id": "7",
+                            "config": {},
+                            "topicId": "905",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        },
+                        {
+                            "key": "INPUT_REQUEST_STATEMENT_COPIES_PERCENTAGE_OF_STATEMENT_REQUESTS_TO_BE_HANDLED_BY_",
+                            "label": "Percentage of statement requests to be handled by agents",
+                            "dataType": "PERCENT",
+                            "id": "8",
+                            "config": {},
+                            "topicId": "905",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        }
+                    ],
+                    "cloudId": "8"
+                },
+                {
+                    "id": "906",
+                    "systemName": "lockunlock-card",
+                    "displayName": "Lock/Unlock Card",
+                    "description": "",
+                    "status": "PUBLISHED",
+                    "minimumCredits": 40,
+                    "maximumCredits": 60,
+                    "mostLikelyCredits": 60,
+                    "targetAudience": "CUSTOMER",
+                    "metadata": {
+                        "maxActions": 3,
+                        "minActions": 2,
+                        "actionCount": 3
+                    },
+                    "formula": "INPUT_LOCKUNLOCK_CARD_TOTAL_CARD_LOCKUNLOCKS_PER_YEAR * INPUT_LOCKUNLOCK_CARD_PERCENTAGE_OF_CARD_LOCKUNLOCKS_TO_SHIFT_TO_AGENTS",
+                    "inputs": [
+                        {
+                            "key": "INPUT_LOCKUNLOCK_CARD_PERCENTAGE_OF_CARD_LOCKUNLOCKS_TO_SHIFT_TO_AGENTS",
+                            "label": "Percentage of card lock/unlocks to shift to agents",
+                            "dataType": "PERCENT",
+                            "id": "10",
+                            "config": {},
+                            "topicId": "906",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        },
+                        {
+                            "key": "INPUT_LOCKUNLOCK_CARD_TOTAL_CARD_LOCKUNLOCKS_PER_YEAR",
+                            "label": "Total card lock/unlocks per year",
+                            "dataType": "NUMBER",
+                            "id": "9",
+                            "config": {},
+                            "topicId": "906",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        }
+                    ],
+                    "cloudId": "8"
+                },
+                {
+                    "id": "909",
+                    "systemName": "frequently-asked-questions",
+                    "displayName": "Frequently Asked Questions",
+                    "description": "",
+                    "status": "PUBLISHED",
+                    "minimumCredits": 40,
+                    "maximumCredits": 100,
+                    "mostLikelyCredits": 100,
+                    "targetAudience": "CUSTOMER",
+                    "metadata": {
+                        "maxActions": 5,
+                        "minActions": 2,
+                        "actionCount": 5
+                    },
+                    "formula": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_BANKING_CUSTOMERS * INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_ASK_THE_AGENT_A_Q",
+                    "inputs": [
+                        {
+                            "key": "INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_ASK_THE_AGENT_A_Q",
+                            "label": "Percentage of customers who will ask the agent a question",
+                            "dataType": "PERCENT",
+                            "id": "16",
+                            "config": {},
+                            "topicId": "909",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        },
+                        {
+                            "key": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_BANKING_CUSTOMERS",
+                            "label": "Total banking customers",
+                            "dataType": "NUMBER",
+                            "id": "15",
+                            "config": {},
+                            "topicId": "909",
+                            "createdBy": "system",
+                            "createdAt": "2026-02-23T17:29:35.851956Z",
+                            "lastUpdatedBy": "system",
+                            "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                        }
+                    ],
+                    "cloudId": "8"
+                },
+                {
+                    "id": "enhance-my-agent",
+                    "systemName": "Enhance Agent (Unstructured Data)",
+                    "displayName": "Enhance Agent (Unstructured Data)",
+                    "description": "Unstructured data processing for AI agents (PDFs, images, knowledge)",
+                    "minimumCredits": 0,
+                    "maximumCredits": 0,
+                    "mostLikelyCredits": 0,
+                    "formula": "",
+                    "metadata": {
+                        "actionCount": 0
+                    },
+                    "inputs": [
+                        {
+                            "key": "INPUT_UC5_1",
+                            "label": "How many MB of text-based files will you include (PDF, TXT, HTML, DOC)?",
+                            "dataType": "NUMBER",
+                            "config": null
+                        },
+                        {
+                            "key": "INPUT_UC5_2",
+                            "label": "How many MB of non-text files will you include (images, audio, video)?",
+                            "dataType": "NUMBER",
+                            "config": null
+                        },
+                        {
+                            "key": "INPUT_UC5_3",
+                            "label": "How many knowledge articles will you import?",
+                            "dataType": "NUMBER",
+                            "config": null
+                        },
+                        {
+                            "key": "INPUT_UC5_4",
+                            "label": "How many times a day will you query unstructured data?",
+                            "dataType": "NUMBER",
+                            "config": null
+                        }
+                    ]
+                }
+            ],
+            "gatingSkus": []
+        },
+        "topics": [
+            {
+                "id": "903",
+                "systemName": "financial-account-transactions",
+                "displayName": "Financial Account Transactions",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_CUSTOMERS_WHO_INQUIRE_ON_ACCOUNT_TRANSACTION * INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_INQ",
+                "inputs": [
+                    {
+                        "key": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_INQ",
+                        "label": "Total times yearly on average a customer would inquire on account transactions",
+                        "dataType": "NUMBER",
+                        "id": "4",
+                        "config": {},
+                        "topicId": "903",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_CUSTOMERS_WHO_INQUIRE_ON_ACCOUNT_TRANSACTION",
+                        "label": "Total customers who inquire on account transactions",
+                        "dataType": "NUMBER",
+                        "id": "3",
+                        "config": {},
+                        "topicId": "903",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "908",
+                "systemName": "transfer-funds",
+                "displayName": "Transfer Funds",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 80,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 4,
+                    "minActions": 2,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_TRANSFER_FUNDS_TOTAL_TRANSFER_FUND_REQUESTS_PER_YEAR * INPUT_TRANSFER_FUNDS_PERCENTAGE_OF_TRANSFERS_TO_SHIFT_TO_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_TRANSFER_FUNDS_PERCENTAGE_OF_TRANSFERS_TO_SHIFT_TO_AGENTS",
+                        "label": "Percentage of transfers to shift to agents",
+                        "dataType": "PERCENT",
+                        "id": "14",
+                        "config": {},
+                        "topicId": "908",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_TRANSFER_FUNDS_TOTAL_TRANSFER_FUND_REQUESTS_PER_YEAR",
+                        "label": "Total transfer fund requests per year",
+                        "dataType": "NUMBER",
+                        "id": "13",
+                        "config": {},
+                        "topicId": "908",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "902",
+                "systemName": "financial-account-balances",
+                "displayName": "Financial Account Balances",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_CUSTOMERS_WHO_REQUEST_ACCOUNT_BALANCE * INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_REQ",
+                "inputs": [
+                    {
+                        "key": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_CUSTOMERS_WHO_REQUEST_ACCOUNT_BALANCE",
+                        "label": "Total customers who request account balance",
+                        "dataType": "NUMBER",
+                        "id": "1",
+                        "config": {},
+                        "topicId": "902",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_REQ",
+                        "label": "Total times yearly on average a customer would request account balance",
+                        "dataType": "NUMBER",
+                        "id": "2",
+                        "config": {},
+                        "topicId": "902",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "907",
+                "systemName": "fee-reversal",
+                "displayName": "Fee Reversal",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 2,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_FEE_REVERSAL_TOTAL_FEE_REVERAL_REQUESTS_PER_YEAR * INPUT_FEE_REVERSAL_PERCENTAGE_OF_FEE_REVERSALS_TO_SHIFT_TO_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_FEE_REVERSAL_TOTAL_FEE_REVERAL_REQUESTS_PER_YEAR",
+                        "label": "Total fee reveral requests per year",
+                        "dataType": "NUMBER",
+                        "id": "11",
+                        "config": {},
+                        "topicId": "907",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FEE_REVERSAL_PERCENTAGE_OF_FEE_REVERSALS_TO_SHIFT_TO_AGENTS",
+                        "label": "Percentage of fee reversals to shift to agents",
+                        "dataType": "PERCENT",
+                        "id": "12",
+                        "config": {},
+                        "topicId": "907",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "904",
+                "systemName": "address-update",
+                "displayName": "Address Update",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_ADDRESS_UPDATE_TOTAL_ADDRESS_UPDATES_REQUESTED_PER_YEAR * INPUT_ADDRESS_UPDATE_PERCENTAGE_OF_UPDATES_TO_BE_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_ADDRESS_UPDATE_PERCENTAGE_OF_UPDATES_TO_BE_HANDLED_BY_AGENTS",
+                        "label": "Percentage of updates to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "6",
+                        "config": {},
+                        "topicId": "904",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_ADDRESS_UPDATE_TOTAL_ADDRESS_UPDATES_REQUESTED_PER_YEAR",
+                        "label": "Total address updates requested per year",
+                        "dataType": "NUMBER",
+                        "id": "5",
+                        "config": {},
+                        "topicId": "904",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "905",
+                "systemName": "request-statement-copies",
+                "displayName": "Request Statement Copies",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 1,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_REQUEST_STATEMENT_COPIES_TOTAL_STATEMENT_REQUESTS_PER_YEAR * INPUT_REQUEST_STATEMENT_COPIES_PERCENTAGE_OF_STATEMENT_REQUESTS_TO_BE_HANDLED_BY_",
+                "inputs": [
+                    {
+                        "key": "INPUT_REQUEST_STATEMENT_COPIES_TOTAL_STATEMENT_REQUESTS_PER_YEAR",
+                        "label": "Total statement requests per year",
+                        "dataType": "NUMBER",
+                        "id": "7",
+                        "config": {},
+                        "topicId": "905",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_REQUEST_STATEMENT_COPIES_PERCENTAGE_OF_STATEMENT_REQUESTS_TO_BE_HANDLED_BY_",
+                        "label": "Percentage of statement requests to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "8",
+                        "config": {},
+                        "topicId": "905",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "906",
+                "systemName": "lockunlock-card",
+                "displayName": "Lock/Unlock Card",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 2,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_LOCKUNLOCK_CARD_TOTAL_CARD_LOCKUNLOCKS_PER_YEAR * INPUT_LOCKUNLOCK_CARD_PERCENTAGE_OF_CARD_LOCKUNLOCKS_TO_SHIFT_TO_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_LOCKUNLOCK_CARD_PERCENTAGE_OF_CARD_LOCKUNLOCKS_TO_SHIFT_TO_AGENTS",
+                        "label": "Percentage of card lock/unlocks to shift to agents",
+                        "dataType": "PERCENT",
+                        "id": "10",
+                        "config": {},
+                        "topicId": "906",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_LOCKUNLOCK_CARD_TOTAL_CARD_LOCKUNLOCKS_PER_YEAR",
+                        "label": "Total card lock/unlocks per year",
+                        "dataType": "NUMBER",
+                        "id": "9",
+                        "config": {},
+                        "topicId": "906",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "909",
+                "systemName": "frequently-asked-questions",
+                "displayName": "Frequently Asked Questions",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 100,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 2,
+                    "actionCount": 5
+                },
+                "formula": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_BANKING_CUSTOMERS * INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_ASK_THE_AGENT_A_Q",
+                "inputs": [
+                    {
+                        "key": "INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_ASK_THE_AGENT_A_Q",
+                        "label": "Percentage of customers who will ask the agent a question",
+                        "dataType": "PERCENT",
+                        "id": "16",
+                        "config": {},
+                        "topicId": "909",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_BANKING_CUSTOMERS",
+                        "label": "Total banking customers",
+                        "dataType": "NUMBER",
+                        "id": "15",
+                        "config": {},
+                        "topicId": "909",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "enhance-my-agent",
+                "systemName": "Enhance Agent (Unstructured Data)",
+                "displayName": "Enhance Agent (Unstructured Data)",
+                "description": "Unstructured data processing for AI agents (PDFs, images, knowledge)",
+                "minimumCredits": 0,
+                "maximumCredits": 0,
+                "mostLikelyCredits": 0,
+                "formula": "",
+                "metadata": {
+                    "actionCount": 0
+                },
+                "inputs": [
+                    {
+                        "key": "INPUT_UC5_1",
+                        "label": "How many MB of text-based files will you include (PDF, TXT, HTML, DOC)?",
+                        "dataType": "NUMBER",
+                        "config": null
+                    },
+                    {
+                        "key": "INPUT_UC5_2",
+                        "label": "How many MB of non-text files will you include (images, audio, video)?",
+                        "dataType": "NUMBER",
+                        "config": null
+                    },
+                    {
+                        "key": "INPUT_UC5_3",
+                        "label": "How many knowledge articles will you import?",
+                        "dataType": "NUMBER",
+                        "config": null
+                    },
+                    {
+                        "key": "INPUT_UC5_4",
+                        "label": "How many times a day will you query unstructured data?",
+                        "dataType": "NUMBER",
+                        "config": null
+                    }
+                ]
+            }
+        ],
+        "topicCredits": {
+            "902": 0,
+            "903": 16000,
+            "904": 0,
+            "905": 0,
+            "906": 0,
+            "907": 0,
+            "908": 0,
+            "909": 0
+        },
+        "topicPrices": {
+            "902": 0,
+            "903": 80,
+            "904": 0,
+            "905": 0,
+            "906": 0,
+            "907": 0,
+            "908": 0,
+            "909": 0
+        },
+        "templateCredits": 16000,
+        "templatePrice": 80,
+        "disabledTopics": {
+            "902": true,
+            "903": false,
+            "904": true,
+            "905": true,
+            "906": true,
+            "907": true,
+            "908": true,
+            "909": true
+        },
+        "topicInputValues": {
+            "902": {
+                "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_CUSTOMERS_WHO_REQUEST_ACCOUNT_BALANCE": 0,
+                "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_REQ": 0
+            },
+            "903": {
+                "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_INQ": 20,
+                "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_CUSTOMERS_WHO_INQUIRE_ON_ACCOUNT_TRANSACTION": 20
+            },
+            "904": {
+                "INPUT_ADDRESS_UPDATE_PERCENTAGE_OF_UPDATES_TO_BE_HANDLED_BY_AGENTS": 0,
+                "INPUT_ADDRESS_UPDATE_TOTAL_ADDRESS_UPDATES_REQUESTED_PER_YEAR": 0
+            },
+            "905": {
+                "INPUT_REQUEST_STATEMENT_COPIES_TOTAL_STATEMENT_REQUESTS_PER_YEAR": 0,
+                "INPUT_REQUEST_STATEMENT_COPIES_PERCENTAGE_OF_STATEMENT_REQUESTS_TO_BE_HANDLED_BY_": 0
+            },
+            "906": {
+                "INPUT_LOCKUNLOCK_CARD_PERCENTAGE_OF_CARD_LOCKUNLOCKS_TO_SHIFT_TO_AGENTS": 0,
+                "INPUT_LOCKUNLOCK_CARD_TOTAL_CARD_LOCKUNLOCKS_PER_YEAR": 0
+            },
+            "907": {
+                "INPUT_FEE_REVERSAL_TOTAL_FEE_REVERAL_REQUESTS_PER_YEAR": 0,
+                "INPUT_FEE_REVERSAL_PERCENTAGE_OF_FEE_REVERSALS_TO_SHIFT_TO_AGENTS": 0
+            },
+            "908": {
+                "INPUT_TRANSFER_FUNDS_PERCENTAGE_OF_TRANSFERS_TO_SHIFT_TO_AGENTS": 0,
+                "INPUT_TRANSFER_FUNDS_TOTAL_TRANSFER_FUND_REQUESTS_PER_YEAR": 0
+            },
+            "909": {
+                "INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_ASK_THE_AGENT_A_Q": 0,
+                "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_BANKING_CUSTOMERS": 0
+            }
+        }
+    },
+    {
+        "template": {
+            "id": "200",
+            "systemName": "slack-onboarding-agent",
+            "displayName": "Slack Onboarding Agent",
+            "description": "Guide new members to success with the Slack Onboarding Agent. It assesses experience, identifies goals, and delivers personalized onboarding paths—helping users navigate Slack, find key conversations, and become productive faster from day one",
+            "status": "PUBLISHED",
+            "cloudId": "7",
+            "targetAudience": "EMPLOYEE",
+            "topics": [],
+            "gatingSkus": [
+                {
+                    "id": "12",
+                    "key": "a1e-any",
+                    "packageKey": "A1E",
+                    "skuMonthlyCost": 550,
+                    "status": "PUBLISHED",
+                    "displayName": "Any Agentforce 1 Edition ",
+                    "description": "",
+                    "cloudId": "6"
+                },
+                {
+                    "id": "13",
+                    "key": "a4x-any-af-add-on",
+                    "packageKey": "A4X",
+                    "skuMonthlyCost": 125,
+                    "status": "PUBLISHED",
+                    "displayName": "Any Agentforce Add-On",
+                    "description": "",
+                    "cloudId": "6"
+                }
+            ]
+        },
+        "topics": [],
+        "topicCredits": {},
+        "topicPrices": {},
+        "templateCredits": 0,
+        "templatePrice": 0,
+        "disabledTopics": {},
+        "topicInputValues": {}
+    }
+]

@@ -1,0 +1,3625 @@
+[
+    {
+        "id": "158",
+        "systemName": "banking-customer-service-agent",
+        "displayName": "Banking Customer Service Agent",
+        "description": "Deliver instant, 24/7 resolution for common banking inquiries to meet customer needs on the spot while significantly reducing call center traffic",
+        "status": "PUBLISHED",
+        "cloudId": "8",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "903",
+                "systemName": "financial-account-transactions",
+                "displayName": "Financial Account Transactions",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_CUSTOMERS_WHO_INQUIRE_ON_ACCOUNT_TRANSACTION * INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_INQ",
+                "inputs": [
+                    {
+                        "key": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_INQ",
+                        "label": "Total times yearly on average a customer would inquire on account transactions",
+                        "dataType": "NUMBER",
+                        "id": "4",
+                        "config": {},
+                        "topicId": "903",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FINANCIAL_ACCOUNT_TRANSACTIONS_TOTAL_CUSTOMERS_WHO_INQUIRE_ON_ACCOUNT_TRANSACTION",
+                        "label": "Total customers who inquire on account transactions",
+                        "dataType": "NUMBER",
+                        "id": "3",
+                        "config": {},
+                        "topicId": "903",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "908",
+                "systemName": "transfer-funds",
+                "displayName": "Transfer Funds",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 80,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 4,
+                    "minActions": 2,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_TRANSFER_FUNDS_TOTAL_TRANSFER_FUND_REQUESTS_PER_YEAR * INPUT_TRANSFER_FUNDS_PERCENTAGE_OF_TRANSFERS_TO_SHIFT_TO_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_TRANSFER_FUNDS_PERCENTAGE_OF_TRANSFERS_TO_SHIFT_TO_AGENTS",
+                        "label": "Percentage of transfers to shift to agents",
+                        "dataType": "PERCENT",
+                        "id": "14",
+                        "config": {},
+                        "topicId": "908",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_TRANSFER_FUNDS_TOTAL_TRANSFER_FUND_REQUESTS_PER_YEAR",
+                        "label": "Total transfer fund requests per year",
+                        "dataType": "NUMBER",
+                        "id": "13",
+                        "config": {},
+                        "topicId": "908",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "902",
+                "systemName": "financial-account-balances",
+                "displayName": "Financial Account Balances",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_CUSTOMERS_WHO_REQUEST_ACCOUNT_BALANCE * INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_REQ",
+                "inputs": [
+                    {
+                        "key": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_CUSTOMERS_WHO_REQUEST_ACCOUNT_BALANCE",
+                        "label": "Total customers who request account balance",
+                        "dataType": "NUMBER",
+                        "id": "1",
+                        "config": {},
+                        "topicId": "902",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FINANCIAL_ACCOUNT_BALANCES_TOTAL_TIMES_YEARLY_ON_AVERAGE_A_CUSTOMER_WOULD_REQ",
+                        "label": "Total times yearly on average a customer would request account balance",
+                        "dataType": "NUMBER",
+                        "id": "2",
+                        "config": {},
+                        "topicId": "902",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "907",
+                "systemName": "fee-reversal",
+                "displayName": "Fee Reversal",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 2,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_FEE_REVERSAL_TOTAL_FEE_REVERAL_REQUESTS_PER_YEAR * INPUT_FEE_REVERSAL_PERCENTAGE_OF_FEE_REVERSALS_TO_SHIFT_TO_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_FEE_REVERSAL_TOTAL_FEE_REVERAL_REQUESTS_PER_YEAR",
+                        "label": "Total fee reveral requests per year",
+                        "dataType": "NUMBER",
+                        "id": "11",
+                        "config": {},
+                        "topicId": "907",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FEE_REVERSAL_PERCENTAGE_OF_FEE_REVERSALS_TO_SHIFT_TO_AGENTS",
+                        "label": "Percentage of fee reversals to shift to agents",
+                        "dataType": "PERCENT",
+                        "id": "12",
+                        "config": {},
+                        "topicId": "907",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "904",
+                "systemName": "address-update",
+                "displayName": "Address Update",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_ADDRESS_UPDATE_TOTAL_ADDRESS_UPDATES_REQUESTED_PER_YEAR * INPUT_ADDRESS_UPDATE_PERCENTAGE_OF_UPDATES_TO_BE_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_ADDRESS_UPDATE_PERCENTAGE_OF_UPDATES_TO_BE_HANDLED_BY_AGENTS",
+                        "label": "Percentage of updates to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "6",
+                        "config": {},
+                        "topicId": "904",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_ADDRESS_UPDATE_TOTAL_ADDRESS_UPDATES_REQUESTED_PER_YEAR",
+                        "label": "Total address updates requested per year",
+                        "dataType": "NUMBER",
+                        "id": "5",
+                        "config": {},
+                        "topicId": "904",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "905",
+                "systemName": "request-statement-copies",
+                "displayName": "Request Statement Copies",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 1,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_REQUEST_STATEMENT_COPIES_TOTAL_STATEMENT_REQUESTS_PER_YEAR * INPUT_REQUEST_STATEMENT_COPIES_PERCENTAGE_OF_STATEMENT_REQUESTS_TO_BE_HANDLED_BY_",
+                "inputs": [
+                    {
+                        "key": "INPUT_REQUEST_STATEMENT_COPIES_TOTAL_STATEMENT_REQUESTS_PER_YEAR",
+                        "label": "Total statement requests per year",
+                        "dataType": "NUMBER",
+                        "id": "7",
+                        "config": {},
+                        "topicId": "905",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_REQUEST_STATEMENT_COPIES_PERCENTAGE_OF_STATEMENT_REQUESTS_TO_BE_HANDLED_BY_",
+                        "label": "Percentage of statement requests to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "8",
+                        "config": {},
+                        "topicId": "905",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "906",
+                "systemName": "lockunlock-card",
+                "displayName": "Lock/Unlock Card",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 2,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_LOCKUNLOCK_CARD_TOTAL_CARD_LOCKUNLOCKS_PER_YEAR * INPUT_LOCKUNLOCK_CARD_PERCENTAGE_OF_CARD_LOCKUNLOCKS_TO_SHIFT_TO_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_LOCKUNLOCK_CARD_PERCENTAGE_OF_CARD_LOCKUNLOCKS_TO_SHIFT_TO_AGENTS",
+                        "label": "Percentage of card lock/unlocks to shift to agents",
+                        "dataType": "PERCENT",
+                        "id": "10",
+                        "config": {},
+                        "topicId": "906",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_LOCKUNLOCK_CARD_TOTAL_CARD_LOCKUNLOCKS_PER_YEAR",
+                        "label": "Total card lock/unlocks per year",
+                        "dataType": "NUMBER",
+                        "id": "9",
+                        "config": {},
+                        "topicId": "906",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "909",
+                "systemName": "frequently-asked-questions",
+                "displayName": "Frequently Asked Questions",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 100,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 2,
+                    "actionCount": 5
+                },
+                "formula": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_BANKING_CUSTOMERS * INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_ASK_THE_AGENT_A_Q",
+                "inputs": [
+                    {
+                        "key": "INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_ASK_THE_AGENT_A_Q",
+                        "label": "Percentage of customers who will ask the agent a question",
+                        "dataType": "PERCENT",
+                        "id": "16",
+                        "config": {},
+                        "topicId": "909",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_BANKING_CUSTOMERS",
+                        "label": "Total banking customers",
+                        "dataType": "NUMBER",
+                        "id": "15",
+                        "config": {},
+                        "topicId": "909",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "enhance-my-agent",
+                "systemName": "Enhance Agent (Unstructured Data)",
+                "displayName": "Enhance Agent (Unstructured Data)",
+                "description": "Unstructured data processing for AI agents (PDFs, images, knowledge)",
+                "minimumCredits": 0,
+                "maximumCredits": 0,
+                "mostLikelyCredits": 0,
+                "formula": "",
+                "metadata": {
+                    "actionCount": 0
+                },
+                "inputs": [
+                    {
+                        "key": "INPUT_UC5_1",
+                        "label": "How many MB of text-based files will you include (PDF, TXT, HTML, DOC)?",
+                        "dataType": "NUMBER",
+                        "config": null
+                    },
+                    {
+                        "key": "INPUT_UC5_2",
+                        "label": "How many MB of non-text files will you include (images, audio, video)?",
+                        "dataType": "NUMBER",
+                        "config": null
+                    },
+                    {
+                        "key": "INPUT_UC5_3",
+                        "label": "How many knowledge articles will you import?",
+                        "dataType": "NUMBER",
+                        "config": null
+                    },
+                    {
+                        "key": "INPUT_UC5_4",
+                        "label": "How many times a day will you query unstructured data?",
+                        "dataType": "NUMBER",
+                        "config": null
+                    }
+                ]
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "159",
+        "systemName": "billing-service-assistance",
+        "displayName": "Billing Service Assistance",
+        "description": "Deliver 24/7 instant resolution for billing inquiries from customers with a Billing Service Assistance agent that explains complex invoice charges, reduces support costs, deflects disputes, speeds resolution, and accelerates on-time payments.",
+        "status": "PUBLISHED",
+        "cloudId": "2",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "910",
+                "systemName": "invoice-line-explanation",
+                "displayName": "Invoice Line Explanation",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 400,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 20,
+                    "minActions": 2,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_INVOICE_LINE_EXPLANATION_TOTAL_NUMBER_OF_BILLINGRELATED_SUPPORT_CALLS_YEARL * INPUT_INVOICE_LINE_EXPLANATION_NUMBER_OF_INVOICE_LINES_CUSTOMER_INQUIRES_ABOUT",
+                "inputs": [
+                    {
+                        "key": "INPUT_INVOICE_LINE_EXPLANATION_NUMBER_OF_INVOICE_LINES_CUSTOMER_INQUIRES_ABOUT",
+                        "label": "Number of invoice lines customer inquires about",
+                        "dataType": "NUMBER",
+                        "id": "18",
+                        "config": {},
+                        "topicId": "910",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_INVOICE_LINE_EXPLANATION_TOTAL_NUMBER_OF_BILLINGRELATED_SUPPORT_CALLS_YEARL",
+                        "label": "Total number of billing-related support calls yearly",
+                        "dataType": "NUMBER",
+                        "id": "17",
+                        "config": {},
+                        "topicId": "910",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "18"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "160",
+        "systemName": "collections-customer-agent",
+        "displayName": "Collections Customer Agent",
+        "description": "Enable customers to pull account details, answer common questions, and secure promise-to-pay commitments instantly by engaging with an AI agent that does not judge them",
+        "status": "PUBLISHED",
+        "cloudId": "8",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "911",
+                "systemName": "frequently-asked-questions",
+                "displayName": "Frequently Asked Questions",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 100,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 2,
+                    "actionCount": 5
+                },
+                "formula": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_CUSTOMERS_IN_COLLECTIONS_YEARLY * INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMER_IN_COLLECTIONS_TO_ASK_THE_A",
+                "inputs": [
+                    {
+                        "key": "INPUT_FREQUENTLY_ASKED_QUESTIONS_TOTAL_CUSTOMERS_IN_COLLECTIONS_YEARLY",
+                        "label": "Total customers in collections yearly",
+                        "dataType": "NUMBER",
+                        "id": "19",
+                        "config": {},
+                        "topicId": "911",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FREQUENTLY_ASKED_QUESTIONS_PERCENTAGE_OF_CUSTOMER_IN_COLLECTIONS_TO_ASK_THE_A",
+                        "label": "Percentage of customer in collections to ask the agent questions",
+                        "dataType": "PERCENT",
+                        "id": "20",
+                        "config": {},
+                        "topicId": "911",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            },
+            {
+                "id": "912",
+                "systemName": "promise-to-pay",
+                "displayName": "Promise to Pay",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 2,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_PROMISE_TO_PAY_TOTAL_NEW_CUSTOMERS_IN_COLLECTIONS_YEARLY * INPUT_PROMISE_TO_PAY_PERCENTAGE_OF_THOSE_CUSTOMERS_WHO_WILL_CREATE_A_PR",
+                "inputs": [
+                    {
+                        "key": "INPUT_PROMISE_TO_PAY_PERCENTAGE_OF_THOSE_CUSTOMERS_WHO_WILL_CREATE_A_PR",
+                        "label": "Percentage of those customers who will create a promise to pay",
+                        "dataType": "PERCENT",
+                        "id": "22",
+                        "config": {},
+                        "topicId": "912",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_PROMISE_TO_PAY_TOTAL_NEW_CUSTOMERS_IN_COLLECTIONS_YEARLY",
+                        "label": "Total new customers in collections yearly",
+                        "dataType": "NUMBER",
+                        "id": "21",
+                        "config": {},
+                        "topicId": "912",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "161",
+        "systemName": "commerce-merchant-agent",
+        "displayName": "Commerce Merchant Agent",
+        "description": "Boost operational efficiency with an AI agent that automates storefront management. Empower merchants to instantly generate promotions and uncover conversational insights from store data to optimize sales and drive growth.",
+        "status": "PUBLISHED",
+        "cloudId": "5",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "914",
+                "systemName": "create-promotions",
+                "displayName": "Create Promotions",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 80,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 4,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_CREATE_PROMOTIONS_PROMOTIONS_RUN_YEARLY * INPUT_CREATE_PROMOTIONS_PERCENTAGE_OF_PROMOTIONS_TO_CREATE_WITH_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_CREATE_PROMOTIONS_PROMOTIONS_RUN_YEARLY",
+                        "label": "Promotions run yearly",
+                        "dataType": "NUMBER",
+                        "id": "25",
+                        "config": {},
+                        "topicId": "914",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_CREATE_PROMOTIONS_PERCENTAGE_OF_PROMOTIONS_TO_CREATE_WITH_AGENTS",
+                        "label": "Percentage of promotions to create with agents",
+                        "dataType": "PERCENT",
+                        "id": "26",
+                        "config": {},
+                        "topicId": "914",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            },
+            {
+                "id": "913",
+                "systemName": "conversational-insights",
+                "displayName": "Conversational Insights",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 80,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 4,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_CONVERSATIONAL_INSIGHTS_TOTAL_NUMBER_OF_MERCHANDISERS * INPUT_CONVERSATIONAL_INSIGHTS_TOTAL_TIMES_EACH_MERCHANDISER_WILL_REQUEST_INSIGHT",
+                "inputs": [
+                    {
+                        "key": "INPUT_CONVERSATIONAL_INSIGHTS_TOTAL_NUMBER_OF_MERCHANDISERS",
+                        "label": "Total number of merchandisers",
+                        "dataType": "NUMBER",
+                        "id": "23",
+                        "config": {},
+                        "topicId": "913",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_CONVERSATIONAL_INSIGHTS_TOTAL_TIMES_EACH_MERCHANDISER_WILL_REQUEST_INSIGHT",
+                        "label": "Total times each merchandiser will request insights annually",
+                        "dataType": "NUMBER",
+                        "id": "24",
+                        "config": {},
+                        "topicId": "913",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "162",
+        "systemName": "engagement-agent",
+        "displayName": "Engagement Agent",
+        "description": "Maximize pipeline and seller productivity with an AI agent that greets web visitors, drafts hyper-personalized emails on behalf of your reps, and automates follow-ups. Eliminate manual busywork and turn every customer interaction into growth.",
+        "status": "PUBLISHED",
+        "cloudId": "2",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "923",
+                "systemName": "prospect-meeting-scheduling",
+                "displayName": "Prospect Meeting Scheduling",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1,
+                    "actionCount": 1
+                },
+                "formula": "INPUT_PROSPECT_MEETING_SCHEDULING_TOTAL_YEARLY_SESSIONS_WHERE_A_PROSPECT_ENGAGES_WIT * INPUT_PROSPECT_MEETING_SCHEDULING_PERCENTAGE_OF_SESSIONS_THAT_WILL_LEAD_TO_MEETINGS_",
+                "inputs": [
+                    {
+                        "key": "INPUT_PROSPECT_MEETING_SCHEDULING_PERCENTAGE_OF_SESSIONS_THAT_WILL_LEAD_TO_MEETINGS_",
+                        "label": "Percentage of sessions that will lead to meetings requested",
+                        "dataType": "PERCENT",
+                        "id": "44",
+                        "config": {},
+                        "topicId": "923",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_PROSPECT_MEETING_SCHEDULING_TOTAL_YEARLY_SESSIONS_WHERE_A_PROSPECT_ENGAGES_WIT",
+                        "label": "Total yearly sessions where a prospect engages with your web agent",
+                        "dataType": "NUMBER",
+                        "id": "43",
+                        "config": {},
+                        "topicId": "923",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            },
+            {
+                "id": "918",
+                "systemName": "follow-up-outreach",
+                "displayName": "Follow Up Outreach",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 2,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_FOLLOW_UP_OUTREACH_NEW_LEADS_YEARLY_NURTURED_WITH_AGENTS * INPUT_FOLLOW_UP_OUTREACH_AVERAGE_NUMBER_OF_NUDGE_EMAILS_AFTER_INITIAL_OUTRE",
+                "inputs": [
+                    {
+                        "key": "INPUT_FOLLOW_UP_OUTREACH_NEW_LEADS_YEARLY_NURTURED_WITH_AGENTS",
+                        "label": "New leads yearly nurtured with agents",
+                        "dataType": "NUMBER",
+                        "id": "33",
+                        "config": {},
+                        "topicId": "918",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_FOLLOW_UP_OUTREACH_AVERAGE_NUMBER_OF_NUDGE_EMAILS_AFTER_INITIAL_OUTRE",
+                        "label": "Average number of nudge emails after initial outreach",
+                        "dataType": "NUMBER",
+                        "id": "34",
+                        "config": {},
+                        "topicId": "918",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            },
+            {
+                "id": "921",
+                "systemName": "customer-verification-handling",
+                "displayName": "Customer Verification Handling",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 2,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_CUSTOMER_VERIFICATION_HANDLING_TOTAL_YEARLY_SESSIONS_WHERE_A_PROSPECT_ENGAGES_WIT * INPUT_CUSTOMER_VERIFICATION_HANDLING_PERCENTAGE_OF_PROSPECT_RESPONSES_REQUIRING_USER_AU",
+                "inputs": [
+                    {
+                        "key": "INPUT_CUSTOMER_VERIFICATION_HANDLING_TOTAL_YEARLY_SESSIONS_WHERE_A_PROSPECT_ENGAGES_WIT",
+                        "label": "Total yearly sessions where a prospect engages with your web agent",
+                        "dataType": "NUMBER",
+                        "id": "39",
+                        "config": {},
+                        "topicId": "921",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_CUSTOMER_VERIFICATION_HANDLING_PERCENTAGE_OF_PROSPECT_RESPONSES_REQUIRING_USER_AU",
+                        "label": "Percentage of prospect responses requiring user authentication",
+                        "dataType": "PERCENT",
+                        "id": "40",
+                        "config": {},
+                        "topicId": "921",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            },
+            {
+                "id": "916",
+                "systemName": "generic-response",
+                "displayName": "Generic Response",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 2,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_GENERIC_RESPONSE_YEARLY_LEADS_SENT_OUTREACH_BY_AGENTS * INPUT_GENERIC_RESPONSE_CUSTOMER_EMAIL_RESPONSE_RATE_PERCENTAGE",
+                "inputs": [
+                    {
+                        "key": "INPUT_GENERIC_RESPONSE_CUSTOMER_EMAIL_RESPONSE_RATE_PERCENTAGE",
+                        "label": "Customer Email Response Rate Percentage",
+                        "dataType": "PERCENT",
+                        "id": "30",
+                        "config": {},
+                        "topicId": "916",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_GENERIC_RESPONSE_YEARLY_LEADS_SENT_OUTREACH_BY_AGENTS",
+                        "label": "Yearly leads sent outreach by agents",
+                        "dataType": "NUMBER",
+                        "id": "29",
+                        "config": {},
+                        "topicId": "916",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            },
+            {
+                "id": "922",
+                "systemName": "inbound-sales-record-creation",
+                "displayName": "Inbound Sales Record Creation",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 2,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_INBOUND_SALES_RECORD_CREATION_TOTAL_NET_NEW_LEADS_GENERATED_FROM_YOUR_WEBSITE_YE * INPUT_INBOUND_SALES_RECORD_CREATION_PERCENTAGE_OF_NEW_PROSPECTS_WHO_WILL_ENGAGE_WITH_Y",
+                "inputs": [
+                    {
+                        "key": "INPUT_INBOUND_SALES_RECORD_CREATION_PERCENTAGE_OF_NEW_PROSPECTS_WHO_WILL_ENGAGE_WITH_Y",
+                        "label": "Percentage of new prospects who will engage with your web agent",
+                        "dataType": "PERCENT",
+                        "id": "42",
+                        "config": {},
+                        "topicId": "922",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_INBOUND_SALES_RECORD_CREATION_TOTAL_NET_NEW_LEADS_GENERATED_FROM_YOUR_WEBSITE_YE",
+                        "label": "Total net new leads generated from your website yearly",
+                        "dataType": "NUMBER",
+                        "id": "41",
+                        "config": {},
+                        "topicId": "922",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            },
+            {
+                "id": "917",
+                "systemName": "initial-outreach",
+                "displayName": "Initial Outreach",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 2,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_INITIAL_OUTREACH_NEW_LEADS_YEARLY * INPUT_INITIAL_OUTREACH_PERCENTAGE_OF_NEW_LEADS_TO_NURTURE_WITH_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_INITIAL_OUTREACH_PERCENTAGE_OF_NEW_LEADS_TO_NURTURE_WITH_AGENTS",
+                        "label": "Percentage of new leads to nurture with agents",
+                        "dataType": "PERCENT",
+                        "id": "32",
+                        "config": {},
+                        "topicId": "917",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_INITIAL_OUTREACH_NEW_LEADS_YEARLY",
+                        "label": "New leads yearly",
+                        "dataType": "NUMBER",
+                        "id": "31",
+                        "config": {},
+                        "topicId": "917",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            },
+            {
+                "id": "924",
+                "systemName": "qualification",
+                "displayName": "Qualification",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1,
+                    "actionCount": 1
+                },
+                "formula": "INPUT_QUALIFICATION_TOTAL_YEARLY_SESSIONS_WHERE_A_PROSPECT_ENGAGES_WIT * INPUT_QUALIFICATION_PERCENTAGE_OF_SESSIONS_WHERE_A_PROSPECT_IS_OPEN_TO",
+                "inputs": [
+                    {
+                        "key": "INPUT_QUALIFICATION_PERCENTAGE_OF_SESSIONS_WHERE_A_PROSPECT_IS_OPEN_TO",
+                        "label": "Percentage of sessions where a prospect is open to answering lead qualification questions",
+                        "dataType": "PERCENT",
+                        "id": "46",
+                        "config": {},
+                        "topicId": "924",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_QUALIFICATION_TOTAL_YEARLY_SESSIONS_WHERE_A_PROSPECT_ENGAGES_WIT",
+                        "label": "Total yearly sessions where a prospect engages with your web agent",
+                        "dataType": "NUMBER",
+                        "id": "45",
+                        "config": {},
+                        "topicId": "924",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            },
+            {
+                "id": "919",
+                "systemName": "product-inquiries",
+                "displayName": "Product Inquiries",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 120,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 6,
+                    "minActions": 1,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_PRODUCT_INQUIRIES_AVERAGE_TOTAL_LEAD_RESPONSES_PER_YEAR * INPUT_PRODUCT_INQUIRIES_PERCENTAGE_OF_LEAD_RESPONSES_ASKING_QUESTIONS_ABOU",
+                "inputs": [
+                    {
+                        "key": "INPUT_PRODUCT_INQUIRIES_PERCENTAGE_OF_LEAD_RESPONSES_ASKING_QUESTIONS_ABOU",
+                        "label": "Percentage of lead responses asking questions about products",
+                        "dataType": "PERCENT",
+                        "id": "36",
+                        "config": {},
+                        "topicId": "919",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_PRODUCT_INQUIRIES_AVERAGE_TOTAL_LEAD_RESPONSES_PER_YEAR",
+                        "label": "Average total lead responses per year",
+                        "dataType": "NUMBER",
+                        "id": "35",
+                        "config": {},
+                        "topicId": "919",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            },
+            {
+                "id": "920",
+                "systemName": "meeting-response",
+                "displayName": "Meeting Response",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_MEETING_RESPONSE_AVERAGE_TOTAL_LEAD_RESPONSES_PER_YEAR * INPUT_MEETING_RESPONSE_PERCENTAGE_OF_LEAD_RESPONSES_REQUESTING_MEETING_SC",
+                "inputs": [
+                    {
+                        "key": "INPUT_MEETING_RESPONSE_AVERAGE_TOTAL_LEAD_RESPONSES_PER_YEAR",
+                        "label": "Average total lead responses per year",
+                        "dataType": "NUMBER",
+                        "id": "37",
+                        "config": {},
+                        "topicId": "920",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_MEETING_RESPONSE_PERCENTAGE_OF_LEAD_RESPONSES_REQUESTING_MEETING_SC",
+                        "label": "Percentage of lead responses requesting meeting scheduling",
+                        "dataType": "PERCENT",
+                        "id": "38",
+                        "config": {},
+                        "topicId": "920",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            },
+            {
+                "id": "915",
+                "systemName": "manage-opt-out",
+                "displayName": "Manage Opt-Out",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1,
+                    "actionCount": 1
+                },
+                "formula": "INPUT_MANAGE_OPT_OUT_EMAIL_OPT_OUTS_YEARLY * INPUT_MANAGE_OPT_OUT_PERCENTAGE_OF_OPT_OUTS_TO_BE_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_MANAGE_OPT_OUT_PERCENTAGE_OF_OPT_OUTS_TO_BE_HANDLED_BY_AGENTS",
+                        "label": "Percentage of opt outs to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "28",
+                        "config": {},
+                        "topicId": "915",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_MANAGE_OPT_OUT_EMAIL_OPT_OUTS_YEARLY",
+                        "label": "Email opt outs yearly",
+                        "dataType": "NUMBER",
+                        "id": "27",
+                        "config": {},
+                        "topicId": "915",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "2"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "163",
+        "systemName": "guided-shopping-for-b2b-storefronts",
+        "displayName": "Guided Shopping for B2B Storefronts",
+        "description": "Empower B2B buyers with an AI agent that simplifies complex purchasing. From product search and technical FAQs to seamless cart management and checkout, provide a frictionless, self-service path to purchase on your commerce storefront.",
+        "status": "PUBLISHED",
+        "cloudId": "5",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "928",
+                "systemName": "where-is-my-order",
+                "displayName": "Where is My Order?",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1,
+                    "actionCount": 1
+                },
+                "formula": "INPUT_WHERE_IS_MY_ORDER_TOTAL_ANNUAL_ORDERS * INPUT_WHERE_IS_MY_ORDER_PERCENTAGE_OF_ORDER_INQUIRIES_HANDLED_WITH_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_WHERE_IS_MY_ORDER_PERCENTAGE_OF_ORDER_INQUIRIES_HANDLED_WITH_AGENTS",
+                        "label": "Percentage of order inquiries handled with agents",
+                        "dataType": "PERCENT",
+                        "id": "54",
+                        "config": {},
+                        "topicId": "928",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_WHERE_IS_MY_ORDER_TOTAL_ANNUAL_ORDERS",
+                        "label": "Total annual orders",
+                        "dataType": "NUMBER",
+                        "id": "53",
+                        "config": {},
+                        "topicId": "928",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            },
+            {
+                "id": "925",
+                "systemName": "product-recommendations",
+                "displayName": "Product Recommendations",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 80,
+                "maximumCredits": 80,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 4,
+                    "minActions": 4,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_PRODUCT_RECOMMENDATIONS_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT * INPUT_PRODUCT_RECOMMENDATIONS_PERCENTAGE_OF_SHOPPERS_AGENT_INTERACTIONS_TO_TARGE",
+                "inputs": [
+                    {
+                        "key": "INPUT_PRODUCT_RECOMMENDATIONS_PERCENTAGE_OF_SHOPPERS_AGENT_INTERACTIONS_TO_TARGE",
+                        "label": "Percentage of shoppers agent interactions to target with product recommendations",
+                        "dataType": "PERCENT",
+                        "id": "48",
+                        "config": {},
+                        "topicId": "925",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_PRODUCT_RECOMMENDATIONS_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT",
+                        "label": "Total shoppers yearly who interact with the agent",
+                        "dataType": "NUMBER",
+                        "id": "47",
+                        "config": {},
+                        "topicId": "925",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            },
+            {
+                "id": "927",
+                "systemName": "re-order",
+                "displayName": "Re-Order",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 80,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 4,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_RE_ORDER_REORDERS_YEARLY * INPUT_RE_ORDER_PERCENTAGE_OF_REORDERS_TO_MANAGE_VIA_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_RE_ORDER_PERCENTAGE_OF_REORDERS_TO_MANAGE_VIA_AGENTS",
+                        "label": "Percentage of reorders to manage via agents",
+                        "dataType": "PERCENT",
+                        "id": "52",
+                        "config": {},
+                        "topicId": "927",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_RE_ORDER_REORDERS_YEARLY",
+                        "label": "Re-orders yearly",
+                        "dataType": "NUMBER",
+                        "id": "51",
+                        "config": {},
+                        "topicId": "927",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            },
+            {
+                "id": "926",
+                "systemName": "add-to-cart",
+                "displayName": "Add to Cart",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1,
+                    "actionCount": 1
+                },
+                "formula": "INPUT_ADD_TO_CART_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT * INPUT_ADD_TO_CART_PERCENTAGE_OF_CUSTOMERS_WHO_REQUEST_TO_ADD_A_PRODU",
+                "inputs": [
+                    {
+                        "key": "INPUT_ADD_TO_CART_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT",
+                        "label": "Total shoppers yearly who interact with the agent",
+                        "dataType": "NUMBER",
+                        "id": "49",
+                        "config": {},
+                        "topicId": "926",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_ADD_TO_CART_PERCENTAGE_OF_CUSTOMERS_WHO_REQUEST_TO_ADD_A_PRODU",
+                        "label": "Percentage of customers who request to add a product to cart",
+                        "dataType": "PERCENT",
+                        "id": "50",
+                        "config": {},
+                        "topicId": "926",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "164",
+        "systemName": "guided-shopping-for-b2c-storefronts",
+        "displayName": "Guided Shopping for B2C Storefronts",
+        "description": "Deliver a seamless path to purchase with an AI agent that automates product search, FAQs, and cart management. From discovery to checkout, empower shoppers to find, edit, and buy instantly on your B2C Commerce storefront.",
+        "status": "PUBLISHED",
+        "cloudId": "5",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "930",
+                "systemName": "b2c-commerce-cart-management",
+                "displayName": "B2C Commerce Cart Management",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 80,
+                "maximumCredits": 140,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 7,
+                    "minActions": 4,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_B2C_COMMERCE_CART_MANAGEMENT_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT * INPUT_B2C_COMMERCE_CART_MANAGEMENT_PERCENTAGE_OF_CUSTOMERS_WHO_REQUEST_TO_ADD_A_PRODU",
+                "inputs": [
+                    {
+                        "key": "INPUT_B2C_COMMERCE_CART_MANAGEMENT_PERCENTAGE_OF_CUSTOMERS_WHO_REQUEST_TO_ADD_A_PRODU",
+                        "label": "Percentage of customers who request to add a product to cart",
+                        "dataType": "PERCENT",
+                        "id": "58",
+                        "config": {},
+                        "topicId": "930",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_B2C_COMMERCE_CART_MANAGEMENT_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT",
+                        "label": "Total shoppers yearly who interact with the agent",
+                        "dataType": "NUMBER",
+                        "id": "57",
+                        "config": {},
+                        "topicId": "930",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            },
+            {
+                "id": "933",
+                "systemName": "b2c-commerce-product-faqs",
+                "displayName": "B2C Commerce Product FAQs",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 80,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 4,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_B2C_COMMERCE_PRODUCT_FAQS_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT * INPUT_B2C_COMMERCE_PRODUCT_FAQS_PERCENTAGE_OF_CUSTOMERS_WHO_ASK_PRODUCT_QUESTIONS",
+                "inputs": [
+                    {
+                        "key": "INPUT_B2C_COMMERCE_PRODUCT_FAQS_PERCENTAGE_OF_CUSTOMERS_WHO_ASK_PRODUCT_QUESTIONS",
+                        "label": "Percentage of customers who ask product questions",
+                        "dataType": "PERCENT",
+                        "id": "64",
+                        "config": {},
+                        "topicId": "933",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_B2C_COMMERCE_PRODUCT_FAQS_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT",
+                        "label": "Total shoppers yearly who interact with the agent",
+                        "dataType": "NUMBER",
+                        "id": "63",
+                        "config": {},
+                        "topicId": "933",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            },
+            {
+                "id": "932",
+                "systemName": "b2c-commerce-update-cart",
+                "displayName": "B2C Commerce Update Cart",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1,
+                    "actionCount": 1
+                },
+                "formula": "INPUT_B2C_COMMERCE_UPDATE_CART_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT * INPUT_B2C_COMMERCE_UPDATE_CART_PERCENTAGE_OF_CUSTOMERS_WHO_UPDATE_CART_WITH_THE_A",
+                "inputs": [
+                    {
+                        "key": "INPUT_B2C_COMMERCE_UPDATE_CART_PERCENTAGE_OF_CUSTOMERS_WHO_UPDATE_CART_WITH_THE_A",
+                        "label": "Percentage of customers who update cart with the agent",
+                        "dataType": "PERCENT",
+                        "id": "62",
+                        "config": {},
+                        "topicId": "932",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_B2C_COMMERCE_UPDATE_CART_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT",
+                        "label": "Total shoppers yearly who interact with the agent",
+                        "dataType": "NUMBER",
+                        "id": "61",
+                        "config": {},
+                        "topicId": "932",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            },
+            {
+                "id": "934",
+                "systemName": "b2c-commerce-site-faqs",
+                "displayName": "B2C Commerce Site FAQs",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 80,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 4,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_B2C_COMMERCE_SITE_FAQS_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT * INPUT_B2C_COMMERCE_SITE_FAQS_PERCENTAGE_OF_CUSTOMERS_WHO_ASK_QUESTIONS_ANSWERAB",
+                "inputs": [
+                    {
+                        "key": "INPUT_B2C_COMMERCE_SITE_FAQS_PERCENTAGE_OF_CUSTOMERS_WHO_ASK_QUESTIONS_ANSWERAB",
+                        "label": "Percentage of customers who ask questions answerable with the website content",
+                        "dataType": "PERCENT",
+                        "id": "66",
+                        "config": {},
+                        "topicId": "934",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_B2C_COMMERCE_SITE_FAQS_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT",
+                        "label": "Total shoppers yearly who interact with the agent",
+                        "dataType": "NUMBER",
+                        "id": "65",
+                        "config": {},
+                        "topicId": "934",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            },
+            {
+                "id": "931",
+                "systemName": "b2c-commerce-order-assistant",
+                "displayName": "B2C Commerce Order Assistant",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 80,
+                "maximumCredits": 160,
+                "mostLikelyCredits": 100,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 8,
+                    "minActions": 4,
+                    "actionCount": 5
+                },
+                "formula": "INPUT_B2C_COMMERCE_ORDER_ASSISTANT_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT * INPUT_B2C_COMMERCE_ORDER_ASSISTANT_PERCENTAGE_OF_CUSTOMERS_WHO_COMPLETE_THE_PURCHASE_",
+                "inputs": [
+                    {
+                        "key": "INPUT_B2C_COMMERCE_ORDER_ASSISTANT_PERCENTAGE_OF_CUSTOMERS_WHO_COMPLETE_THE_PURCHASE_",
+                        "label": "Percentage of customers who complete the purchase with the agent",
+                        "dataType": "PERCENT",
+                        "id": "60",
+                        "config": {},
+                        "topicId": "931",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_B2C_COMMERCE_ORDER_ASSISTANT_TOTAL_SHOPPERS_YEARLY_WHO_INTERACT_WITH_THE_AGENT",
+                        "label": "Total shoppers yearly who interact with the agent",
+                        "dataType": "NUMBER",
+                        "id": "59",
+                        "config": {},
+                        "topicId": "931",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            },
+            {
+                "id": "929",
+                "systemName": "b2c-commerce-product-search-assistant",
+                "displayName": "B2C Commerce Product Search Assistant",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 80,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 4,
+                    "minActions": 2,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_B2C_COMMERCE_PRODUCT_SEARCH_ASSISTA_TOTAL_VISITORS_TO_YOUR_WEBSITE_YEARLY * INPUT_B2C_COMMERCE_PRODUCT_SEARCH_ASSISTA_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_COMPLETE_A_PRODUC",
+                "inputs": [
+                    {
+                        "key": "INPUT_B2C_COMMERCE_PRODUCT_SEARCH_ASSISTA_TOTAL_VISITORS_TO_YOUR_WEBSITE_YEARLY",
+                        "label": "Total visitors to your website yearly",
+                        "dataType": "NUMBER",
+                        "id": "55",
+                        "config": {},
+                        "topicId": "929",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_B2C_COMMERCE_PRODUCT_SEARCH_ASSISTA_PERCENTAGE_OF_CUSTOMERS_WHO_WILL_COMPLETE_A_PRODUC",
+                        "label": "Percentage of customers who will complete a product search with the agent",
+                        "dataType": "PERCENT",
+                        "id": "56",
+                        "config": {},
+                        "topicId": "929",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "5"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "165",
+        "systemName": "loan-product-assistance",
+        "displayName": "Loan Product Assistance",
+        "description": "Use agents to guide borrowers through loan product discovery by answering questions about loans, sharing interest rate fee details, and quickly comparing offerings.",
+        "status": "PUBLISHED",
+        "cloudId": "8",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "935",
+                "systemName": "lending-product-discovery",
+                "displayName": "Lending Product Discovery",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 80,
+                "maximumCredits": 120,
+                "mostLikelyCredits": 100,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 6,
+                    "minActions": 4,
+                    "actionCount": 5
+                },
+                "formula": "INPUT_LENDING_PRODUCT_DISCOVERY_LENDING_PROSPECTS_YEARLY * INPUT_LENDING_PRODUCT_DISCOVERY_PERCENTAGE_TO_RECOMMEND_LOAN_PRODUCTS_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_LENDING_PRODUCT_DISCOVERY_LENDING_PROSPECTS_YEARLY",
+                        "label": "Lending Prospects Yearly",
+                        "dataType": "NUMBER",
+                        "id": "67",
+                        "config": {},
+                        "topicId": "935",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_LENDING_PRODUCT_DISCOVERY_PERCENTAGE_TO_RECOMMEND_LOAN_PRODUCTS_BY_AGENTS",
+                        "label": "Percentage to recommend loan products by agents",
+                        "dataType": "PERCENT",
+                        "id": "68",
+                        "config": {},
+                        "topicId": "935",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "8"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "166",
+        "systemName": "mobile-worker",
+        "displayName": "Mobile Worker",
+        "description": "Empower your field teams with an AI agent that delivers pre-work briefs, provides onsite knowledge support, and automates post-work summaries. From managing appointments to resolving complex repairs, help mobile workers work faster and smarter.",
+        "status": "PUBLISHED",
+        "cloudId": "3",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "939",
+                "systemName": "post-work-summary",
+                "displayName": "Post-Work Summary",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 60,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 3,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_POST_WORK_SUMMARY_SERVICE_APPOINTMENTS_YEARLY * INPUT_POST_WORK_SUMMARY_PERCENTAGE_OF_APPOINTMENTS_TO_ENHANCE_WITH_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_POST_WORK_SUMMARY_SERVICE_APPOINTMENTS_YEARLY",
+                        "label": "Service appointments yearly",
+                        "dataType": "NUMBER",
+                        "id": "75",
+                        "config": {},
+                        "topicId": "939",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_POST_WORK_SUMMARY_PERCENTAGE_OF_APPOINTMENTS_TO_ENHANCE_WITH_AGENTS",
+                        "label": "Percentage of appointments to enhance with agents",
+                        "dataType": "PERCENT",
+                        "id": "76",
+                        "config": {},
+                        "topicId": "939",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "3"
+            },
+            {
+                "id": "936",
+                "systemName": "appointment-management",
+                "displayName": "Appointment Management",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 60,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 3,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_APPOINTMENT_MANAGEMENT_APPOINTMENT_UPDATES_YEARLY_CHANGES_CANCELLATIONS * INPUT_APPOINTMENT_MANAGEMENT_PERCENTAGE_OF_SCHEDULING_TO_BE_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_APPOINTMENT_MANAGEMENT_PERCENTAGE_OF_SCHEDULING_TO_BE_HANDLED_BY_AGENTS",
+                        "label": "Percentage of scheduling to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "70",
+                        "config": {},
+                        "topicId": "936",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_APPOINTMENT_MANAGEMENT_APPOINTMENT_UPDATES_YEARLY_CHANGES_CANCELLATIONS",
+                        "label": "Appointment updates yearly (changes, cancellations)",
+                        "dataType": "NUMBER",
+                        "id": "69",
+                        "config": {},
+                        "topicId": "936",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "3"
+            },
+            {
+                "id": "937",
+                "systemName": "onsite-knowledge-support",
+                "displayName": "Onsite Knowledge Support",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 80,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 4,
+                    "minActions": 2,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_ONSITE_KNOWLEDGE_SUPPORT_SERVICE_QUESTIONS_YEARLY * INPUT_ONSITE_KNOWLEDGE_SUPPORT_PERCENTAGE_OF_QUESTIONS_TO_BE_MANAGED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_ONSITE_KNOWLEDGE_SUPPORT_SERVICE_QUESTIONS_YEARLY",
+                        "label": "Service questions yearly",
+                        "dataType": "NUMBER",
+                        "id": "71",
+                        "config": {},
+                        "topicId": "937",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_ONSITE_KNOWLEDGE_SUPPORT_PERCENTAGE_OF_QUESTIONS_TO_BE_MANAGED_BY_AGENTS",
+                        "label": "Percentage of questions to be managed by agents",
+                        "dataType": "PERCENT",
+                        "id": "72",
+                        "config": {},
+                        "topicId": "937",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "3"
+            },
+            {
+                "id": "938",
+                "systemName": "pre-work-brief",
+                "displayName": "Pre-Work Brief",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1,
+                    "actionCount": 1
+                },
+                "formula": "INPUT_PRE_WORK_BRIEF_SERVICE_APPOINTMENTS_YEARLY * INPUT_PRE_WORK_BRIEF_PERCENTAGE_OF_APPOINTMENTS_TO_ENHANCE_WITH_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_PRE_WORK_BRIEF_SERVICE_APPOINTMENTS_YEARLY",
+                        "label": "Service appointments yearly",
+                        "dataType": "NUMBER",
+                        "id": "73",
+                        "config": {},
+                        "topicId": "938",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_PRE_WORK_BRIEF_PERCENTAGE_OF_APPOINTMENTS_TO_ENHANCE_WITH_AGENTS",
+                        "label": "Percentage of appointments to enhance with agents",
+                        "dataType": "PERCENT",
+                        "id": "74",
+                        "config": {},
+                        "topicId": "938",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "3"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "167",
+        "systemName": "personalization-decisioning",
+        "displayName": "Personalization Decisioning",
+        "description": "Deliver hyper-relevant experiences with an AI agent that analyzes real-time intent and behavioral data. From product recommendations to next-best actions, empower your brand to serve the right content to every customer at the perfect moment.",
+        "status": "PUBLISHED",
+        "cloudId": "4",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "940",
+                "systemName": "marketing-cloud-personalized-recommendations",
+                "displayName": "Marketing Cloud: Personalized Recommendations",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 400,
+                "mostLikelyCredits": 120,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 20,
+                    "minActions": 2,
+                    "actionCount": 6
+                },
+                "formula": "INPUT_MARKETING_CLOUD_PERSONALIZED_RECOM_PERCENTAGE_OF_SESSIONS_WHERE_PERSONALIZED_RECOMMEN * INPUT_MARKETING_CLOUD_PERSONALIZED_RECOM_SITE_CUSTOMER_VISITS_YEARLY",
+                "inputs": [
+                    {
+                        "key": "INPUT_MARKETING_CLOUD_PERSONALIZED_RECOM_PERCENTAGE_OF_SESSIONS_WHERE_PERSONALIZED_RECOMMEN",
+                        "label": "Percentage of sessions where personalized recommendations will be surfaced",
+                        "dataType": "PERCENT",
+                        "id": "77",
+                        "config": {},
+                        "topicId": "940",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_MARKETING_CLOUD_PERSONALIZED_RECOM_SITE_CUSTOMER_VISITS_YEARLY",
+                        "label": "Site customer visits yearly",
+                        "dataType": "NUMBER",
+                        "id": "78",
+                        "config": {},
+                        "topicId": "940",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "4"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "168",
+        "systemName": "scheduling-agent",
+        "displayName": "Scheduling Agent",
+        "description": "Give your customers the power of instant, AI-driven booking. This template automates appointment management via natural language, syncing perfectly with Salesforce Field Service or Scheduler. It’s the fastest way to reduce wait times, optimize your mobile workforce, and free your service team from the phone lines.",
+        "status": "PUBLISHED",
+        "cloudId": "3",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "943",
+                "systemName": "guided-troubleshooting",
+                "displayName": "Guided Troubleshooting",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 60,
+                "maximumCredits": 120,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 6,
+                    "minActions": 3,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_GUIDED_TROUBLESHOOTING_CUSTOMER_TROUBLESHOOTING_INQUIRIES_YEARLY * INPUT_GUIDED_TROUBLESHOOTING_PERCENTAGE_OF_TROUBLESHOOTING_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_GUIDED_TROUBLESHOOTING_CUSTOMER_TROUBLESHOOTING_INQUIRIES_YEARLY",
+                        "label": "Customer troubleshooting inquiries yearly",
+                        "dataType": "NUMBER",
+                        "id": "83",
+                        "config": {},
+                        "topicId": "943",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_GUIDED_TROUBLESHOOTING_PERCENTAGE_OF_TROUBLESHOOTING_HANDLED_BY_AGENTS",
+                        "label": "Percentage of troubleshooting handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "84",
+                        "config": {},
+                        "topicId": "943",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "3"
+            },
+            {
+                "id": "944",
+                "systemName": "customer-verification",
+                "displayName": "Customer Verification",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 2,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_CUSTOMER_VERIFICATION_FIELD_SERVICE_MEETINGS_SCHEDULED_BY_AGENTS_YEARLY * INPUT_CUSTOMER_VERIFICATION_PERCENTAGE_OF_SCHEDULING_REQUESTS_REQUIRING_USER_A",
+                "inputs": [
+                    {
+                        "key": "INPUT_CUSTOMER_VERIFICATION_PERCENTAGE_OF_SCHEDULING_REQUESTS_REQUIRING_USER_A",
+                        "label": "Percentage of scheduling requests requiring user authentication",
+                        "dataType": "PERCENT",
+                        "id": "86",
+                        "config": {},
+                        "topicId": "944",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_CUSTOMER_VERIFICATION_FIELD_SERVICE_MEETINGS_SCHEDULED_BY_AGENTS_YEARLY",
+                        "label": "Field Service meetings scheduled by agents yearly",
+                        "dataType": "NUMBER",
+                        "id": "85",
+                        "config": {},
+                        "topicId": "944",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "3"
+            },
+            {
+                "id": "945",
+                "systemName": "general-faq",
+                "displayName": "General FAQ",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 2,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_GENERAL_FAQ_FIELD_SERVICE_MEETINGS_SCHEDULED_BY_AGENTS_YEARLY * INPUT_GENERAL_FAQ_PERCENTAGE_OF_SCHEDULING_CALLS_THAT_INCLUDE_PRODUC",
+                "inputs": [
+                    {
+                        "key": "INPUT_GENERAL_FAQ_FIELD_SERVICE_MEETINGS_SCHEDULED_BY_AGENTS_YEARLY",
+                        "label": "Field Service meetings scheduled by agents yearly",
+                        "dataType": "NUMBER",
+                        "id": "87",
+                        "config": {},
+                        "topicId": "945",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_GENERAL_FAQ_PERCENTAGE_OF_SCHEDULING_CALLS_THAT_INCLUDE_PRODUC",
+                        "label": "Percentage of scheduling calls that include product or company questions",
+                        "dataType": "PERCENT",
+                        "id": "88",
+                        "config": {},
+                        "topicId": "945",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "3"
+            },
+            {
+                "id": "941",
+                "systemName": "appointment-management-for-field-service",
+                "displayName": "Appointment Management for Field Service",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 80,
+                "maximumCredits": 160,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 8,
+                    "minActions": 4,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_APPOINTMENT_MANAGEMENT_FOR_FIELD_SE_FIELD_SERVICE_APPOINTMENTS_YEARLY * INPUT_APPOINTMENT_MANAGEMENT_FOR_FIELD_SE_PERCENTAGE_OF_SCHEDULING_TO_BE_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_APPOINTMENT_MANAGEMENT_FOR_FIELD_SE_PERCENTAGE_OF_SCHEDULING_TO_BE_HANDLED_BY_AGENTS",
+                        "label": "Percentage of scheduling to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "80",
+                        "config": {},
+                        "topicId": "941",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_APPOINTMENT_MANAGEMENT_FOR_FIELD_SE_FIELD_SERVICE_APPOINTMENTS_YEARLY",
+                        "label": "Field Service appointments yearly",
+                        "dataType": "NUMBER",
+                        "id": "79",
+                        "config": {},
+                        "topicId": "941",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "3"
+            },
+            {
+                "id": "942",
+                "systemName": "escalation",
+                "displayName": "Escalation",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 100,
+                "maximumCredits": 120,
+                "mostLikelyCredits": 100,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 6,
+                    "minActions": 5,
+                    "actionCount": 5
+                },
+                "formula": "INPUT_ESCALATION_FIELD_SERVICE_APPOINTMENTS_SCHEDULED_BY_AGENTS * INPUT_ESCALATION_PERCENTAGE_TO_ESCALATE_TO_HUMAN_FOR_SCHEDULING",
+                "inputs": [
+                    {
+                        "key": "INPUT_ESCALATION_PERCENTAGE_TO_ESCALATE_TO_HUMAN_FOR_SCHEDULING",
+                        "label": "Percentage to escalate to human for scheduling",
+                        "dataType": "PERCENT",
+                        "id": "82",
+                        "config": {},
+                        "topicId": "942",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_ESCALATION_FIELD_SERVICE_APPOINTMENTS_SCHEDULED_BY_AGENTS",
+                        "label": "Field Service appointments scheduled by agents",
+                        "dataType": "NUMBER",
+                        "id": "81",
+                        "config": {},
+                        "topicId": "942",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "3"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "169",
+        "systemName": "service-agent",
+        "displayName": "Service Agent",
+        "description": "Let AI agents quickly resolve common questions and handle routine tasks, freeing up service reps to tackle high value and complex issues. Service Agents can help triage requests, suggest relevant articles, and provide step-by-step instructions tailored to issues.",
+        "status": "PUBLISHED",
+        "cloudId": "1",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "946",
+                "systemName": "provider-matching",
+                "displayName": "Provider Matching",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 40,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 2,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_PROVIDER_MATCHING_FOR_HEALTH_CLOUD_USERS_NUMBER_OF_PATIENTSMEMBERS_W * INPUT_PROVIDER_MATCHING_TOTAL_TIMES_A_SINGLE_PATIENTMEMBER_WOULD_USE_PROVI",
+                "inputs": [
+                    {
+                        "key": "INPUT_PROVIDER_MATCHING_TOTAL_TIMES_A_SINGLE_PATIENTMEMBER_WOULD_USE_PROVI",
+                        "label": "Total times a single patient/member would use provider search yearly on average",
+                        "dataType": "NUMBER",
+                        "id": "90",
+                        "config": {},
+                        "topicId": "946",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_PROVIDER_MATCHING_FOR_HEALTH_CLOUD_USERS_NUMBER_OF_PATIENTSMEMBERS_W",
+                        "label": "(For Health Cloud users) Number of patients/members who search providers yearly",
+                        "dataType": "NUMBER",
+                        "id": "89",
+                        "config": {},
+                        "topicId": "946",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "14"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "170",
+        "systemName": "service-agent",
+        "displayName": "Service Agent",
+        "description": "Let AI agents quickly resolve common questions and handle routine tasks, freeing up service reps to tackle high value and complex issues. Service Agents can help triage requests, suggest relevant articles, and provide step-by-step instructions tailored to issues.",
+        "status": "PUBLISHED",
+        "cloudId": "1",
+        "targetAudience": "CUSTOMER",
+        "topics": [
+            {
+                "id": "947",
+                "systemName": "case-management",
+                "displayName": "Case Management",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 60,
+                "maximumCredits": 80,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 4,
+                    "minActions": 3,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_CASE_MANAGEMENT_TOTAL_ANNUAL_CASES * INPUT_CASE_MANAGEMENT_PERCENTAGE_OF_CASES_TO_MANAGE_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_CASE_MANAGEMENT_TOTAL_ANNUAL_CASES",
+                        "label": "Total annual cases",
+                        "dataType": "NUMBER",
+                        "id": "91",
+                        "config": {},
+                        "topicId": "947",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_CASE_MANAGEMENT_PERCENTAGE_OF_CASES_TO_MANAGE_BY_AGENTS",
+                        "label": "Percentage of cases to manage by agents",
+                        "dataType": "PERCENT",
+                        "id": "92",
+                        "config": {},
+                        "topicId": "947",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            },
+            {
+                "id": "956",
+                "systemName": "sales-record-creation",
+                "displayName": "Sales Record Creation",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1,
+                    "actionCount": 1
+                },
+                "formula": "INPUT_SALES_RECORD_CREATION_LEADS_GENERATED_YEARLY * INPUT_SALES_RECORD_CREATION_PERCENTAGE_OF_SALES_RECORDS_TO_BE_CREATED_BY_AGENT",
+                "inputs": [
+                    {
+                        "key": "INPUT_SALES_RECORD_CREATION_PERCENTAGE_OF_SALES_RECORDS_TO_BE_CREATED_BY_AGENT",
+                        "label": "Percentage of sales records to be created by agents",
+                        "dataType": "PERCENT",
+                        "id": "110",
+                        "config": {},
+                        "topicId": "956",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_SALES_RECORD_CREATION_LEADS_GENERATED_YEARLY",
+                        "label": "Leads generated yearly",
+                        "dataType": "NUMBER",
+                        "id": "109",
+                        "config": {},
+                        "topicId": "956",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            },
+            {
+                "id": "950",
+                "systemName": "delivery-issues",
+                "displayName": "Delivery Issues",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 60,
+                "maximumCredits": 140,
+                "mostLikelyCredits": 100,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 7,
+                    "minActions": 3,
+                    "actionCount": 5
+                },
+                "formula": "INPUT_DELIVERY_ISSUES_NUMBER_OF_DELIVERY_ISSUES_YEARLY * INPUT_DELIVERY_ISSUES_PERCENTAGE_OF_DELIVERY_ISSUES_TO_BE_HANDLED_BY_AGE",
+                "inputs": [
+                    {
+                        "key": "INPUT_DELIVERY_ISSUES_PERCENTAGE_OF_DELIVERY_ISSUES_TO_BE_HANDLED_BY_AGE",
+                        "label": "Percentage of delivery issues to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "98",
+                        "config": {},
+                        "topicId": "950",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_DELIVERY_ISSUES_NUMBER_OF_DELIVERY_ISSUES_YEARLY",
+                        "label": "Number of delivery issues yearly",
+                        "dataType": "NUMBER",
+                        "id": "97",
+                        "config": {},
+                        "topicId": "950",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            },
+            {
+                "id": "954",
+                "systemName": "customer-verification",
+                "displayName": "Customer Verification",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 40,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 2
+                },
+                "formula": "INPUT_CUSTOMER_VERIFICATION_TOTAL_CUSTOMER_SERVICE_AGENT_REQUESTS_PER_YEAR * INPUT_CUSTOMER_VERIFICATION_PERCENTAGE_OF_REQUESTS_REQUIRING_USER_AUTHENTICATI",
+                "inputs": [
+                    {
+                        "key": "INPUT_CUSTOMER_VERIFICATION_TOTAL_CUSTOMER_SERVICE_AGENT_REQUESTS_PER_YEAR",
+                        "label": "Total customer service agent requests per year",
+                        "dataType": "NUMBER",
+                        "id": "105",
+                        "config": {},
+                        "topicId": "954",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_CUSTOMER_VERIFICATION_PERCENTAGE_OF_REQUESTS_REQUIRING_USER_AUTHENTICATI",
+                        "label": "Percentage of requests requiring user authentication",
+                        "dataType": "PERCENT",
+                        "id": "106",
+                        "config": {},
+                        "topicId": "954",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            },
+            {
+                "id": "952",
+                "systemName": "personalized-recommendations-for-service",
+                "displayName": "Personalized Recommendations for Service",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1
+                },
+                "formula": "INPUT_PERSONALIZED_RECOMMENDATIONS_FOR_SE_TOTAL_ANNUAL_CASES * INPUT_PERSONALIZED_RECOMMENDATIONS_FOR_SE_PERCENTAGE_OF_CASES_TO_INCLUDE_A_RECOMMENDATION_FO",
+                "inputs": [
+                    {
+                        "key": "INPUT_PERSONALIZED_RECOMMENDATIONS_FOR_SE_TOTAL_ANNUAL_CASES",
+                        "label": "Total annual cases",
+                        "dataType": "NUMBER",
+                        "id": "101",
+                        "config": {},
+                        "topicId": "952",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_PERSONALIZED_RECOMMENDATIONS_FOR_SE_PERCENTAGE_OF_CASES_TO_INCLUDE_A_RECOMMENDATION_FO",
+                        "label": "Percentage of cases to include a recommendation for a product, service, or loyalty upgrade",
+                        "dataType": "PERCENT",
+                        "id": "102",
+                        "config": {},
+                        "topicId": "952",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            },
+            {
+                "id": "955",
+                "systemName": "prospect-meeting-scheduling",
+                "displayName": "Prospect Meeting Scheduling",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 20,
+                "mostLikelyCredits": 20,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 1,
+                    "minActions": 1,
+                    "actionCount": 1
+                },
+                "formula": "INPUT_PROSPECT_MEETING_SCHEDULING_PROSPECT_MEETINGS_SCHEDULED_YEARLY * INPUT_PROSPECT_MEETING_SCHEDULING_PERCENTAGE_OF_SCHEDULING_TO_BE_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_PROSPECT_MEETING_SCHEDULING_PERCENTAGE_OF_SCHEDULING_TO_BE_HANDLED_BY_AGENTS",
+                        "label": "Percentage of scheduling to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "108",
+                        "config": {},
+                        "topicId": "955",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_PROSPECT_MEETING_SCHEDULING_PROSPECT_MEETINGS_SCHEDULED_YEARLY",
+                        "label": "Prospect meetings scheduled yearly",
+                        "dataType": "NUMBER",
+                        "id": "107",
+                        "config": {},
+                        "topicId": "955",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            },
+            {
+                "id": "948",
+                "systemName": "account-management",
+                "displayName": "Account Management",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 60,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 3,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_ACCOUNT_MANAGEMENT_TOTAL_ACCOUNT_UPDATE_REQUESTS * INPUT_ACCOUNT_MANAGEMENT_PERCENTAGE_OF_REQUESTS_TO_BE_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_ACCOUNT_MANAGEMENT_PERCENTAGE_OF_REQUESTS_TO_BE_HANDLED_BY_AGENTS",
+                        "label": "Percentage of requests to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "94",
+                        "config": {},
+                        "topicId": "948",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_ACCOUNT_MANAGEMENT_TOTAL_ACCOUNT_UPDATE_REQUESTS",
+                        "label": "Total account update requests",
+                        "dataType": "NUMBER",
+                        "id": "93",
+                        "config": {},
+                        "topicId": "948",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            },
+            {
+                "id": "953",
+                "systemName": "general-faq",
+                "displayName": "General FAQ",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 20,
+                "maximumCredits": 60,
+                "mostLikelyCredits": 40,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 3,
+                    "minActions": 1,
+                    "actionCount": 2
+                },
+                "formula": "INPUT_GENERAL_FAQ_FAQ_QUESTIONS_FIELDED_BY_SERVICE_REPRESENTATIVES_Y * INPUT_GENERAL_FAQ_PERCENTAGE_OF_QUESTIONS_TO_BE_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_GENERAL_FAQ_FAQ_QUESTIONS_FIELDED_BY_SERVICE_REPRESENTATIVES_Y",
+                        "label": "FAQ questions fielded by service representatives yearly",
+                        "dataType": "NUMBER",
+                        "id": "103",
+                        "config": {},
+                        "topicId": "953",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_GENERAL_FAQ_PERCENTAGE_OF_QUESTIONS_TO_BE_HANDLED_BY_AGENTS",
+                        "label": "Percentage of questions to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "104",
+                        "config": {},
+                        "topicId": "953",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            },
+            {
+                "id": "949",
+                "systemName": "reservation-management-service",
+                "displayName": "Reservation Management - Service",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 60,
+                "maximumCredits": 100,
+                "mostLikelyCredits": 60,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 5,
+                    "minActions": 3,
+                    "actionCount": 3
+                },
+                "formula": "INPUT_RESERVATION_MANAGEMENT_SERVICE_SERVICE_APPOINTMENTSRESERVATIONS_PER_YEAR * INPUT_RESERVATION_MANAGEMENT_SERVICE_PERCENTAGE_OF_RESERVATIONS_TO_BE_HANDLED_BY_AGENTS",
+                "inputs": [
+                    {
+                        "key": "INPUT_RESERVATION_MANAGEMENT_SERVICE_PERCENTAGE_OF_RESERVATIONS_TO_BE_HANDLED_BY_AGENTS",
+                        "label": "Percentage of reservations to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "96",
+                        "config": {},
+                        "topicId": "949",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_RESERVATION_MANAGEMENT_SERVICE_SERVICE_APPOINTMENTSRESERVATIONS_PER_YEAR",
+                        "label": "Service appointments/reservations per year",
+                        "dataType": "NUMBER",
+                        "id": "95",
+                        "config": {},
+                        "topicId": "949",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            },
+            {
+                "id": "951",
+                "systemName": "order-inquiries",
+                "displayName": "Order Inquiries",
+                "description": "",
+                "status": "PUBLISHED",
+                "minimumCredits": 60,
+                "maximumCredits": 140,
+                "mostLikelyCredits": 80,
+                "targetAudience": "CUSTOMER",
+                "metadata": {
+                    "maxActions": 7,
+                    "minActions": 3,
+                    "actionCount": 4
+                },
+                "formula": "INPUT_ORDER_INQUIRIES_NUMBER_OF_ORDER_INQUIRIES_YEARLY * INPUT_ORDER_INQUIRIES_PERCENTAGE_OF_ORDER_INQUIRIES_TO_BE_HANDLED_BY_AGE",
+                "inputs": [
+                    {
+                        "key": "INPUT_ORDER_INQUIRIES_PERCENTAGE_OF_ORDER_INQUIRIES_TO_BE_HANDLED_BY_AGE",
+                        "label": "Percentage of order inquiries to be handled by agents",
+                        "dataType": "PERCENT",
+                        "id": "100",
+                        "config": {},
+                        "topicId": "951",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    },
+                    {
+                        "key": "INPUT_ORDER_INQUIRIES_NUMBER_OF_ORDER_INQUIRIES_YEARLY",
+                        "label": "Number of order Inquiries yearly",
+                        "dataType": "NUMBER",
+                        "id": "99",
+                        "config": {},
+                        "topicId": "951",
+                        "createdBy": "system",
+                        "createdAt": "2026-02-23T17:29:35.851956Z",
+                        "lastUpdatedBy": "system",
+                        "lastUpdatedAt": "2026-02-23T17:29:35.851956Z"
+                    }
+                ],
+                "cloudId": "1"
+            }
+        ],
+        "gatingSkus": []
+    },
+    {
+        "id": "171",
+        "systemName": "agentforce-for-benefits-reverification",
+        "displayName": "Agentforce for Benefits Reverification",
+        "description": "Automate interactions with patients for reverification of benefits using Agentforce. Seamlessly validate verify requests and update latest details.",
+        "status": "PUBLISHED",
+        "cloudId": "12",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "6",
+                "key": "a4x-af-life-sciences",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Life Sciences",
+                "description": "",
+                "cloudId": "12"
+            },
+            {
+                "id": "19",
+                "key": "a1e-life-sciences-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Life Sciences Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "12"
+            }
+        ]
+    },
+    {
+        "id": "172",
+        "systemName": "asset-finance-management",
+        "displayName": "Asset Finance Management",
+        "description": "Empower finance teams with the Asset Finance Management Agent. Automate loan and lease workflows, manage vehicle and financial account data, and streamline payments and collections—improving speed, accuracy, and operational efficiency.",
+        "status": "PUBLISHED",
+        "cloudId": "10",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "1",
+                "key": "a4x-af-automotive-cloud",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Automotive Cloud",
+                "description": "",
+                "cloudId": "10"
+            },
+            {
+                "id": "14",
+                "key": "a1e-automotive-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Automotive Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "10"
+            }
+        ]
+    },
+    {
+        "id": "173",
+        "systemName": "asset-service-management",
+        "displayName": "Asset Service Management",
+        "description": "Assist employees by automating maintenance workflows, scheduling service actions, and tracking asset health—improving uptime and proactive service with connected industry intelligence.",
+        "status": "PUBLISHED",
+        "cloudId": "10",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "1",
+                "key": "a4x-af-automotive-cloud",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Automotive Cloud",
+                "description": "",
+                "cloudId": "10"
+            },
+            {
+                "id": "7",
+                "key": "a4x-af-manufacturing",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Manufacturing Cloud",
+                "description": "",
+                "cloudId": "9"
+            },
+            {
+                "id": "14",
+                "key": "a1e-automotive-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Automotive Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "10"
+            },
+            {
+                "id": "20",
+                "key": "a1e-manufacturing-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 700,
+                "status": "PUBLISHED",
+                "displayName": "Manufacturing Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "9"
+            }
+        ]
+    },
+    {
+        "id": "174",
+        "systemName": "banking-employee-service-agent",
+        "displayName": "Banking Employee Service Agent",
+        "description": "Improve customer satisfaction and resolve issues faster with an AI agent designed to help CSRs instantly handle common banking inquiries like fee reversals, transaction disputes, and card security.",
+        "status": "PUBLISHED",
+        "cloudId": "8",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "4",
+                "key": "a4x-af-financial-services",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Financial Services Cloud",
+                "description": "",
+                "cloudId": "8"
+            },
+            {
+                "id": "17",
+                "key": "a1e-financial-services-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Financial Services Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "8"
+            }
+        ]
+    },
+    {
+        "id": "175",
+        "systemName": "billing-employee-assistance",
+        "displayName": "Billing Employee Assistance",
+        "description": "Use the Billing Employee Assistance agent to quickly answer questions on balances, invoices, due dates, payment plans, and charges—helping billing teams resolve customer inquiries faster and operate more efficiently.",
+        "status": "PUBLISHED",
+        "cloudId": "2",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "8",
+                "key": "a4x-af-sales",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Sales",
+                "description": "",
+                "cloudId": "2"
+            },
+            {
+                "id": "21",
+                "key": "a1e-sales-cloud",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Sales Cloud Agentforce 1 Sales & Sales Cloud Agentforce 1 Service",
+                "description": "",
+                "cloudId": "2"
+            }
+        ]
+    },
+    {
+        "id": "176",
+        "systemName": "billing-resolution-agent",
+        "displayName": "Billing Resolution Agent",
+        "description": "This agent analyzes bills and autonomously resolve disputes within set guardrails. It provides instant financial clarity for customers while freeing service reps to handle high-priority escalations.",
+        "status": "PUBLISHED",
+        "cloudId": "19",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "2",
+                "key": "a4x-af-communications",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Communications ",
+                "description": "",
+                "cloudId": "19"
+            },
+            {
+                "id": "15",
+                "key": "a1e-communications-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 850,
+                "status": "PUBLISHED",
+                "displayName": "Communications Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "19"
+            }
+        ]
+    },
+    {
+        "id": "177",
+        "systemName": "campaign-creation-agent",
+        "displayName": "Campaign Creation Agent",
+        "description": "Accelerate time-to-market with an AI agent that generates comprehensive briefs, segments audiences, and drafts multi-channel journeys. From strategy to execution, empower your team to launch data-driven campaigns in hours, not weeks.",
+        "status": "PUBLISHED",
+        "cloudId": "4",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "12",
+                "key": "a1e-any",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce 1 Edition ",
+                "description": "",
+                "cloudId": "6"
+            },
+            {
+                "id": "13",
+                "key": "a4x-any-af-add-on",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce Add-On",
+                "description": "",
+                "cloudId": "6"
+            }
+        ]
+    },
+    {
+        "id": "178",
+        "systemName": "collections-employee-agent",
+        "displayName": "Collections Employee Agent",
+        "description": "Guide conversations, accurately capturing payment commitments, securely delivering payment options, and ensuring up-to-date contact details to accelerate collections, boost efficiency, and cultivate stronger customer relationships.",
+        "status": "PUBLISHED",
+        "cloudId": "8",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "4",
+                "key": "a4x-af-financial-services",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Financial Services Cloud",
+                "description": "",
+                "cloudId": "8"
+            },
+            {
+                "id": "17",
+                "key": "a1e-financial-services-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Financial Services Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "8"
+            }
+        ]
+    },
+    {
+        "id": "179",
+        "systemName": "content-creation-agent",
+        "displayName": "Content Creation Agent",
+        "description": "Maintain brand consistency with an AI agent that drafts and refines emails, SMS, and landing pages. Use CRM data to instantly generate high-performing subject lines and personalized body copy that resonates with every customer.",
+        "status": "PUBLISHED",
+        "cloudId": "4",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "12",
+                "key": "a1e-any",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce 1 Edition ",
+                "description": "",
+                "cloudId": "6"
+            },
+            {
+                "id": "13",
+                "key": "a4x-any-af-add-on",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce Add-On",
+                "description": "",
+                "cloudId": "6"
+            }
+        ]
+    },
+    {
+        "id": "180",
+        "systemName": "employee-agent",
+        "displayName": "Employee Agent",
+        "description": "Employee agents handle employee requests across multiple services, route to specialized agents, and provide consolidated responses",
+        "status": "PUBLISHED",
+        "cloudId": "6",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "12",
+                "key": "a1e-any",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce 1 Edition ",
+                "description": "",
+                "cloudId": "6"
+            },
+            {
+                "id": "13",
+                "key": "a4x-any-af-add-on",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce Add-On",
+                "description": "",
+                "cloudId": "6"
+            }
+        ]
+    },
+    {
+        "id": "181",
+        "systemName": "financial-advisor-assistance",
+        "displayName": "Financial Advisor Assistance",
+        "description": "Analyze real-time client, household, and portfolio data to help advisors prepare for meetings in seconds, capture key meeting details, and automate follow-up and recommended next steps so advisors spend more time moving clients toward their goals.",
+        "status": "PUBLISHED",
+        "cloudId": "8",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "4",
+                "key": "a4x-af-financial-services",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Financial Services Cloud",
+                "description": "",
+                "cloudId": "8"
+            },
+            {
+                "id": "17",
+                "key": "a1e-financial-services-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Financial Services Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "8"
+            }
+        ]
+    },
+    {
+        "id": "182",
+        "systemName": "guided-selling-agent",
+        "displayName": "Guided Selling Agent",
+        "description": "This agent empowers field techs to capture revenue during high-cost site visits by instantly generating technically validated, context-aware upsell quotes. By aligning offers with customer history and real-time needs, it boosts ARPU and satisfaction.",
+        "status": "PUBLISHED",
+        "cloudId": "19",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "2",
+                "key": "a4x-af-communications",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Communications ",
+                "description": "",
+                "cloudId": "19"
+            },
+            {
+                "id": "15",
+                "key": "a1e-communications-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 850,
+                "status": "PUBLISHED",
+                "displayName": "Communications Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "19"
+            }
+        ]
+    },
+    {
+        "id": "183",
+        "systemName": "health-agent",
+        "displayName": "Health Agent",
+        "description": "Find patients and services, monitor home health, and act on insights from disease surveillance as part of the Employee Agent.",
+        "status": "PUBLISHED",
+        "cloudId": "14",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "5",
+                "key": "a4x-af-health",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Health",
+                "description": "",
+                "cloudId": "14"
+            },
+            {
+                "id": "18",
+                "key": "a1e-health-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Health Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "14"
+            }
+        ]
+    },
+    {
+        "id": "184",
+        "systemName": "hr-service-agent",
+        "displayName": "HR Service Agent",
+        "description": "This agent provides 24/7 autonomous HR support in Slack or Teams. It connects to third-party HR systems to resolve complex tasks, such as leave requests or payroll updates, freeing HR teams for strategic work.",
+        "status": "PUBLISHED",
+        "cloudId": "1",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "9",
+                "key": "a4x-af-service",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Service",
+                "description": "",
+                "cloudId": "1"
+            }
+        ]
+    },
+    {
+        "id": "185",
+        "systemName": "industries-customer-engagement",
+        "displayName": "Industries Customer Engagement",
+        "description": "Empower automotive teams with the Industries Customer Engagement Agent. Automate personalized outreach, surface real-time insights, and help employees engage drivers with timely service and sales actions using connected industry data and AI",
+        "status": "PUBLISHED",
+        "cloudId": "10",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "1",
+                "key": "a4x-af-automotive-cloud",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Automotive Cloud",
+                "description": "",
+                "cloudId": "10"
+            },
+            {
+                "id": "14",
+                "key": "a1e-automotive-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Automotive Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "10"
+            }
+        ]
+    },
+    {
+        "id": "186",
+        "systemName": "insurance-service-agent",
+        "displayName": "Insurance Service Agent",
+        "description": "Provide answers and guide representatives through common transactions like policy quoting and proof of insurance—reducing effort, speeding resolution, and improving customer satisfaction.",
+        "status": "PUBLISHED",
+        "cloudId": "8",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "4",
+                "key": "a4x-af-financial-services",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Financial Services Cloud",
+                "description": "",
+                "cloudId": "8"
+            },
+            {
+                "id": "17",
+                "key": "a1e-financial-services-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Financial Services Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "8"
+            }
+        ]
+    },
+    {
+        "id": "187",
+        "systemName": "inventory-management",
+        "displayName": "Inventory Management",
+        "description": "Automate inventory coordination across locations, track stock levels, and suggest replenishment actions—helping teams manage vehicles, parts, and components more efficiently with real-time AI support.",
+        "status": "PUBLISHED",
+        "cloudId": "10",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "1",
+                "key": "a4x-af-automotive-cloud",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Automotive Cloud",
+                "description": "",
+                "cloudId": "10"
+            },
+            {
+                "id": "7",
+                "key": "a4x-af-manufacturing",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Manufacturing Cloud",
+                "description": "",
+                "cloudId": "9"
+            },
+            {
+                "id": "14",
+                "key": "a1e-automotive-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Automotive Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "10"
+            },
+            {
+                "id": "20",
+                "key": "a1e-manufacturing-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 700,
+                "status": "PUBLISHED",
+                "displayName": "Manufacturing Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "9"
+            }
+        ]
+    },
+    {
+        "id": "188",
+        "systemName": "it-service-employee-agent",
+        "displayName": "IT Service Employee Agent",
+        "description": "This agent provides 24/7 IT support to employees in Slack or Teams. It leverages a unified CMDB to autonomously execute multi-step workflows, like provisioning software, resolving routine requests seamlessly without human intervention.",
+        "status": "PUBLISHED",
+        "cloudId": "1",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "10",
+                "key": "a4x-af-service-desk",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce IT Service Desk ",
+                "description": "",
+                "cloudId": "1"
+            },
+            {
+                "id": "11",
+                "key": "a4x-ai-for-employees",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 5,
+                "status": "PUBLISHED",
+                "displayName": "AI Agents for Employees ",
+                "description": "",
+                "cloudId": "1"
+            }
+        ]
+    },
+    {
+        "id": "189",
+        "systemName": "journey-decisioning-agent",
+        "displayName": "Journey Decisioning Agent",
+        "description": "Optimize the customer path with an AI agent that analyzes real-time signals to select the best message and timing for every individual. Maximize engagement by ensuring every subscriber enters the most relevant journey automatically.",
+        "status": "PUBLISHED",
+        "cloudId": "4",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "12",
+                "key": "a1e-any",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce 1 Edition ",
+                "description": "",
+                "cloudId": "6"
+            },
+            {
+                "id": "13",
+                "key": "a4x-any-af-add-on",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce Add-On",
+                "description": "",
+                "cloudId": "6"
+            }
+        ]
+    },
+    {
+        "id": "190",
+        "systemName": "mobile-worker",
+        "displayName": "Mobile Worker",
+        "description": "Empower your field teams with an AI agent that delivers pre-work briefs, provides onsite knowledge support, and automates post-work summaries. From managing appointments to resolving complex repairs, help mobile workers work faster and smarter.",
+        "status": "PUBLISHED",
+        "cloudId": "3",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "3",
+                "key": "a4x-af-field-service",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Field Service",
+                "description": "",
+                "cloudId": "3"
+            },
+            {
+                "id": "16",
+                "key": "a1e-field-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 650,
+                "status": "PUBLISHED",
+                "displayName": "Field Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "3"
+            }
+        ]
+    },
+    {
+        "id": "191",
+        "systemName": "paid-media-optmization-agent",
+        "displayName": "Paid Media Optmization Agent",
+        "description": "Maximize ROI with an AI agent that monitors ad performance in real time. Automatically identify underperforming campaigns, pause low-impact ads, and reallocate budget to high-growth channels to ensure every media dollar works harder.",
+        "status": "PUBLISHED",
+        "cloudId": "4",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "12",
+                "key": "a1e-any",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce 1 Edition ",
+                "description": "",
+                "cloudId": "6"
+            },
+            {
+                "id": "13",
+                "key": "a4x-any-af-add-on",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce Add-On",
+                "description": "",
+                "cloudId": "6"
+            }
+        ]
+    },
+    {
+        "id": "192",
+        "systemName": "relationship-assistance",
+        "displayName": "Relationship Assistance",
+        "description": "Help teams in commercial banking, wealth management, and insurance prepare for conversations, uncover risks and opportunities across their portfolio, and keep relationship plans and next steps automatically up to date. ",
+        "status": "PUBLISHED",
+        "cloudId": "8",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "4",
+                "key": "a4x-af-financial-services",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Financial Services Cloud",
+                "description": "",
+                "cloudId": "8"
+            },
+            {
+                "id": "17",
+                "key": "a1e-financial-services-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Financial Services Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "8"
+            }
+        ]
+    },
+    {
+        "id": "193",
+        "systemName": "revenue-quote-management",
+        "displayName": "Revenue Quote Management",
+        "description": "Instantly generate quotes with Revenue Quote Management for direct and partner sales to accelerate deal velocity. Agents follow your internal business rules and logic to ensure all quotes are accurate and compliant.",
+        "status": "PUBLISHED",
+        "cloudId": "2",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "8",
+                "key": "a4x-af-sales",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Sales",
+                "description": "",
+                "cloudId": "2"
+            },
+            {
+                "id": "21",
+                "key": "a1e-sales-cloud",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Sales Cloud Agentforce 1 Sales & Sales Cloud Agentforce 1 Service",
+                "description": "",
+                "cloudId": "2"
+            }
+        ]
+    },
+    {
+        "id": "194",
+        "systemName": "sales-management-agent",
+        "displayName": "Sales Management Agent",
+        "description": "Empower employees with the Sales Agent to manage outreach, respond to prospects, process opt-outs, and support quote management. Agents follow your business rules to ensure accurate execution, faster follow-ups, and consistent sales operations.",
+        "status": "PUBLISHED",
+        "cloudId": "2",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "8",
+                "key": "a4x-af-sales",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Sales",
+                "description": "",
+                "cloudId": "2"
+            },
+            {
+                "id": "21",
+                "key": "a1e-sales-cloud",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Sales Cloud Agentforce 1 Sales & Sales Cloud Agentforce 1 Service",
+                "description": "",
+                "cloudId": "2"
+            }
+        ]
+    },
+    {
+        "id": "195",
+        "systemName": "sales-planning",
+        "displayName": "Sales Planning Agent",
+        "description": "Support sales teams with AI-driven forecasting, opportunity insights, and planning recommendations—aligning inventory, demand, and targets to improve automotive and manufacturing sales outcomes.",
+        "status": "PUBLISHED",
+        "cloudId": "10",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "1",
+                "key": "a4x-af-automotive-cloud",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Automotive Cloud",
+                "description": "",
+                "cloudId": "10"
+            },
+            {
+                "id": "7",
+                "key": "a4x-af-manufacturing",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Manufacturing Cloud",
+                "description": "",
+                "cloudId": "9"
+            },
+            {
+                "id": "14",
+                "key": "a1e-automotive-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 750,
+                "status": "PUBLISHED",
+                "displayName": "Automotive Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "10"
+            },
+            {
+                "id": "20",
+                "key": "a1e-manufacturing-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 700,
+                "status": "PUBLISHED",
+                "displayName": "Manufacturing Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "9"
+            }
+        ]
+    },
+    {
+        "id": "196",
+        "systemName": "service-level-objective-insights-agent",
+        "displayName": "Service Level Objective Insights Agent",
+        "description": "This agent provides 24/7 monitoring of service promises like fiber uptime. By resolving issues before customers notice, it shifts teams from reactive firefighting to proactive service, protecting margins by eliminating costly SLA credits.",
+        "status": "PUBLISHED",
+        "cloudId": "19",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "2",
+                "key": "a4x-af-communications",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Communications ",
+                "description": "",
+                "cloudId": "19"
+            },
+            {
+                "id": "15",
+                "key": "a1e-communications-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 850,
+                "status": "PUBLISHED",
+                "displayName": "Communications Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "19"
+            }
+        ]
+    },
+    {
+        "id": "197",
+        "systemName": "site-grouping-agent",
+        "displayName": "Site Grouping Agent",
+        "description": "This agent uses natural language to automate site grouping and validation, replacing hours of manual labor with instant, technically accurate bulk configurations. It ensures every quote is deliverable, slashing clicks and preventing order fallout.",
+        "status": "PUBLISHED",
+        "cloudId": "19",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "2",
+                "key": "a4x-af-communications",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 150,
+                "status": "PUBLISHED",
+                "displayName": "Agentforce for Communications ",
+                "description": "",
+                "cloudId": "19"
+            },
+            {
+                "id": "15",
+                "key": "a1e-communications-cloud-sales-service",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 850,
+                "status": "PUBLISHED",
+                "displayName": "Communications Cloud - Sales or Service - Agentforce 1 Edition",
+                "description": "",
+                "cloudId": "19"
+            }
+        ]
+    },
+    {
+        "id": "198",
+        "systemName": "slack-customer-insights-agent",
+        "displayName": "Slack Customer Insights Agent",
+        "description": "Bring this agent into account channels to surface activity, generate briefs, and share insights in Slack —giving your team on-demand CRM context to stay aligned and deeply understand the customer.",
+        "status": "PUBLISHED",
+        "cloudId": "7",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "12",
+                "key": "a1e-any",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce 1 Edition ",
+                "description": "",
+                "cloudId": "6"
+            },
+            {
+                "id": "13",
+                "key": "a4x-any-af-add-on",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce Add-On",
+                "description": "",
+                "cloudId": "6"
+            }
+        ]
+    },
+    {
+        "id": "199",
+        "systemName": "slack-employee-help-agent",
+        "displayName": "Slack Employee Help Agent",
+        "description": "Connect agents to internal knowledge and Slack history to boost self-serve support, speed up answers, and improve accuracy, helping employees stay productive while reducing load on internal experts.",
+        "status": "PUBLISHED",
+        "cloudId": "7",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "12",
+                "key": "a1e-any",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce 1 Edition ",
+                "description": "",
+                "cloudId": "6"
+            },
+            {
+                "id": "13",
+                "key": "a4x-any-af-add-on",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce Add-On",
+                "description": "",
+                "cloudId": "6"
+            }
+        ]
+    },
+    {
+        "id": "200",
+        "systemName": "slack-onboarding-agent",
+        "displayName": "Slack Onboarding Agent",
+        "description": "Guide new members to success with the Slack Onboarding Agent. It assesses experience, identifies goals, and delivers personalized onboarding paths—helping users navigate Slack, find key conversations, and become productive faster from day one",
+        "status": "PUBLISHED",
+        "cloudId": "7",
+        "targetAudience": "EMPLOYEE",
+        "topics": [],
+        "gatingSkus": [
+            {
+                "id": "12",
+                "key": "a1e-any",
+                "packageKey": "A1E",
+                "skuMonthlyCost": 550,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce 1 Edition ",
+                "description": "",
+                "cloudId": "6"
+            },
+            {
+                "id": "13",
+                "key": "a4x-any-af-add-on",
+                "packageKey": "A4X",
+                "skuMonthlyCost": 125,
+                "status": "PUBLISHED",
+                "displayName": "Any Agentforce Add-On",
+                "description": "",
+                "cloudId": "6"
+            }
+        ]
+    }
+]
