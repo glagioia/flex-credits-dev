@@ -4,7 +4,8 @@ import replace from "@rollup/plugin-replace";
 import { env } from "process";
 import packageJson from './package.json' with { type: 'json' };
 
-const baseUrl = `https://a.sfdcstatic.com/digital/@sfdc-www/open-blade-libs/${packageJson.name}/v${packageJson.version}/`;
+const cdnUrl = `https://a.sfdcstatic.com/digital/@sfdc-www/open-blade-libs/${packageJson.name}/v${packageJson.version}/`;
+const baseUrl = env.VITE_DEPLOY_TARGET === 'vercel' ? '/' : cdnUrl;
 
 // Known asset directories that should be transformed to CDN URLs
 const ASSET_DIRS = ['images', 'assets', 'fonts', 'videos', 'docs', 'static'] as const;
