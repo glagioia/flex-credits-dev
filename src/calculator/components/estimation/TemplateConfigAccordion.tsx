@@ -12,7 +12,7 @@ export type ProductTheme = "agentforce" | "data360";
 
 /** Agentforce: #90D0FE to match UseCaseCard topics header in STEP_ADD_USE_CASE */
 const PRODUCT_THEME_COLORS: Record<ProductTheme, string> = {
-	agentforce: "#90D0FE",
+	agentforce: "#0176D3",
 	data360: "#0176D3",
 };
 
